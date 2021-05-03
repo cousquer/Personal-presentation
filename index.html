@@ -6,8 +6,8 @@
   <meta name="description" content="Lilian's projects • A-Frame">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-  <script src="aframe/aframe.min.js"></script>
-  <script src="aframe/highlight.js"></script> <!--  for the UI -->
+  <script src="Aframe/aframe.min.js"></script>
+  <script src="Aframe/highlight.js"></script> <!--  for the UI -->
 
 </head>
 
@@ -15,11 +15,11 @@
   <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable">
     <a-assets>
 
-      <img id="sea" src="assets/img/sea.jpg"></img>
-      <img id="sky" src="assets/img/sky.jpg"></img>
-      <img id="gound" src="assets/img/ground.png"></img>
+      <img id="sea" src="Assets/img/sea.jpg"></img>
+      <img id="sky" src="Assets/img/sky.jpg"></img>
+      <img id="gound" src="Assets/img/ground.png"></img>
 
-      <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
+      <a-asset-item id="reticle" src="Assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
 
     </a-assets>
@@ -38,7 +38,7 @@
     <a-mixin id="ground_hall" src="#ground" height="5" width="5" rotation="-90 0 0" scale="1 1 1" repeat="25 25">
     </a-mixin>
 
-    <!-- Scene -->
+    <!-- Scene test -->
     <a-entity id="museum" highlight>
       <a-entity geometry="primitive: plane; " mixin="ground_spawn" position="0 0.005 0" rotation="-90 0 0"></a-entity>
       <a-entity geometry="primitive: plane; " mixin="ground_hall" position="0 0 0" rotation="-90 0 0"></a-entity>
