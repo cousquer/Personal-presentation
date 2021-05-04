@@ -15,11 +15,11 @@
   <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable">
     <a-assets>
 
-      <img id="sky" src="assets/img/sky.jpg" />
-      <img id="wall" src="assets/img/wall.jpg" />
+      <img id="texture_sky" src="assets/img/sky.jpg" />
+      <img id="texture_wall" src="assets/img/wall.jpg" />
 
-      <img id="hall_ground" src="assets/img/hall-ground.jpg" />
-      <img id="corridor_ground" src="assets/img/corridor-ground.jpg" />
+      <img id="texture_hall_ground" src="assets/img/hall-ground.jpg" />
+      <img id="texture_corridor_ground" src="assets/img/corridor-ground.jpg" />
 
       <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
@@ -27,17 +27,17 @@
     </a-assets>
 
     <!-- Global assets  -->
-    <a-sky src="#sky"></a-sky>
+    <a-sky src="#texture_sky"></a-sky>
     <a-entity text="align: center; color: red; value: Bienvenue" width="5" position="0 1.5 -2" rotation="0 0 0"
               scale="5 5 5">
     </a-entity>
 
     <!-- Spawn assets  -->
-    <a-mixin id="ground_spawn" src="#sea" height="10" width="10" rotation="-90 0 0" repeat="25 25">
+    <a-mixin id="model_ground_spawn" src="#unknown" height="10" width="10" rotation="-90 0 0" repeat="25 25">
     </a-mixin>
 
     <!-- Hall assets -->
-    <a-mixin id="ground_hall" height="50" width="50" rotation="-90 0 0" repeat="25 25">
+    <a-mixin id="Hall_ground" height="50" width="50" rotation="-90 0 0" repeat="25 25">
     </a-mixin>
     <!-- North
     <a-mixin id="hall_wall_LM1" height="50" width="50" rotation="-90 0 0" repeat="25 25">
@@ -46,9 +46,9 @@
     </a-mixin>
      -->
     <!-- East -->
-    <a-mixin id="hall_wall_LM1" height="50" width="50" position="7.5 2.5 4.5" rotation="0 -90 0" repeat="25 25">
+    <a-mixin id="hall_wall_LM1" height="50" width="50" position="7.5 2.5 5" rotation="0 -90 0" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_LE" height="50" width="50" position="7.5 2.5 -4.5" rotation="0 -90 0" repeat="25 25">
+    <a-mixin id="hall_wall_LE" height="50" width="50" position="7.5 2.5 -5" rotation="0 -90 0" repeat="25 25">
     </a-mixin>
 
 
@@ -61,13 +61,13 @@
                   scale="3 3 1">
         </a-entity>
 
-        <a-entity geometry="primitive: plane; " material="src: #ground" mixin="hall_ground" position="0 0 0"
-                  rotation="-90 0 0" scale="15 15 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_ground_hall" mixin="Hall_ground"
+                  position="0 0 0" rotation="-90 0 0" scale="15 15 1">
         </a-entity>
 
-        <a-entity geometry="primitive: plane; " material="src: #wall" mixin="hall_wall_LM1" scale="6 5 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_LM1" scale="5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #wall" mixin="hall_wall_LE" scale="6 5 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_LE" scale="5 5 1">
         </a-entity>
       </a-entity>
     </a-entity>
