@@ -79,16 +79,16 @@
           Corridors assets 
     -->
     <!-- North -->
-    <a-mixin id="corridor_ground_N" height="30" width="5" position="5 2.5 -7.5" rotation="-90 0 0" repeat="25 25">
+    <a-mixin id="corridor_ground_N" height="5" width="5" position="0 0 -20" rotation="-90 0 0" repeat="25 25">
     </a-mixin>
     <!-- East -->
-    <a-mixin id="corridor_ground_E" height="30" width="5" position="7.5 2.5 5" rotation="-90 -90 0" repeat="25 25">
+    <a-mixin id="corridor_ground_E" height="5" width="5" position="20 0 0" rotation="-90 -90 0" repeat="25 25">
     </a-mixin>
     <!-- West -->
-    <a-mixin id="corridor_ground_W" height="30" width="5" position="-7.5 2.5 5" rotation="-90 90 0" repeat="25 25">
+    <a-mixin id="corridor_ground_W" height="5" width="5" position="-20 0 0" rotation="-90 90 0" repeat="25 25">
     </a-mixin>
     <!-- South -->
-    <a-mixin id="corridor_ground_S" height="30" width="5" position="5 2.5 7.5" rotation="90 0 180" repeat="25 25">
+    <a-mixin id="corridor_ground_S" height="5" width="5" position="0 0 20" rotation="90 0 180" repeat="25 25">
     </a-mixin>
 
     <!-- Scene -->
@@ -125,28 +125,28 @@
       <!-- North part - M1 -->
       <a-entity id="North">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_N"
-                  scale="5 5 1">
+                  scale="5 25 1">
         </a-entity>
       </a-entity>
 
       <!-- East part - M1 -->
       <a-entity id="East">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_E"
-                  scale="5 5 1">
+                  scale="25 5 1">
         </a-entity>
       </a-entity>
 
       <!-- West part - M1 -->
       <a-entity id="West">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_W"
-                  scale="5 5 1">
+                  scale="25 5 1">
         </a-entity>
       </a-entity>
 
       <!-- South part - M1 -->
       <a-entity id="South">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_S"
-                  scale="5 5 1">
+                  scale="5 25 1">
         </a-entity>
       </a-entity>
     </a-entity>
