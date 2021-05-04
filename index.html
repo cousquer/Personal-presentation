@@ -40,20 +40,24 @@
     <a-mixin id="Hall_ground" height="50" width="50" rotation="-90 0 0" repeat="25 25">
     </a-mixin>
     <!-- North -->
-    <a-mixin id="hall_wall_N_M1M2" height="50" width="50" position="5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
+    <a-mixin id="hall_wall_N_M1L" height="50" width="50" position="5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_N_M1L" height="50" width="50" position="-5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
-    </a-mixin>
+    <a-mixin id="hall_wall_N_M1M2" height="50" width="50" position="-5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
     </a-mixin>
     <!-- East -->
-    <a-mixin id="hall_wall_E_LM1" height="50" width="50" position="7.5 2.5 5" rotation="0 -90 0" repeat="25 25">
+    <a-mixin id="hall_wall_E_LE" height="50" width="50" position="7.5 2.5 5" rotation="0 -90 0" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_E_LE" height="50" width="50" position="7.5 2.5 -5" rotation="0 -90 0" repeat="25 25">
+    <a-mixin id="hall_wall_E_LM1" height="50" width="50" position="7.5 2.5 -5" rotation="0 -90 0" repeat="25 25">
     </a-mixin>
     <!-- West -->
     <a-mixin id="hall_wall_W_M2E" height="50" width="50" position="-7.5 2.5 5" rotation="0 90 0" repeat="25 25">
     </a-mixin>
     <a-mixin id="hall_wall_W_M2M1" height="50" width="50" position="-7.5 2.5 -5" rotation="0 90 0" repeat="25 25">
+    </a-mixin>
+    <!-- South -->
+    <a-mixin id="hall_wall_S_EL" height="50" width="50" position="5 2.5 7.5" rotation="180 0 180" repeat="25 25">
+    </a-mixin>
+    <a-mixin id="hall_wall_S_EM2" height="50" width="50" position="-5 2.5 7.5" rotation="180 0 180" repeat="25 25">
     </a-mixin>
 
 
@@ -82,6 +86,10 @@
         <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_W_M2E" scale="5 5 1">
         </a-entity>
         <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_W_M2M1" scale="5 5 1">
+        </a-entity>
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_S_EL" scale="5 5 1">
+        </a-entity>
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_S_EM2" scale="5 5 1">
         </a-entity>
       </a-entity>
     </a-entity>
