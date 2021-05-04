@@ -19,6 +19,7 @@
       <img id="texture_wall" src="assets/img/wall.jpg" />
 
       <img id="texture_hall_ground" src="assets/img/hall-ground.jpg" />
+      <img id="texture_hall_ceiling" src="assets/img/hall-ceiling.jpg" />
       <img id="texture_corridor_ground" src="assets/img/corridor-ground.jpg" />
 
       <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
@@ -51,7 +52,9 @@
     <!-- 
           Hall assets 
     -->
-    <a-mixin id="Hall_ground" height="5" width="5" rotation="-90 0 0">
+    <a-mixin id="hall_ground" height="5" width="5" rotation="-90 0 0">
+    </a-mixin>
+    <a-mixin id="hall_ceiling" height="5" width="5" rotation="-90 90 0">
     </a-mixin>
     <!-- North -->
     <a-mixin id="hall_wall_N_M1L" height="10" width="10" position="5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
@@ -91,17 +94,26 @@
     <a-mixin id="corridor_ground_S" height="5" width="5" position="0 0 20" rotation="-90 0 0" repeat="5 5">
     </a-mixin>
 
+
+
+
+
     <!-- Scene -->
+
+
     <a-entity id="museum" highlight>
 
       <!-- Hall / Spawn -->
-      <a-entity id="hall">
+      <a-entity id="Hall">
         <a-entity geometry="primitive: plane; " mixin="ground_spawn" position="0 0.005 0" rotation="-90 0 0"
                   scale="3 3 1">
         </a-entity>
 
-        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ground" mixin="Hall_ground"
-                  position="0 0 0" rotation="-90 0 0" scale="15 15 1" repeat="10 10">
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ground" mixin="hall_ground"
+                  position="0 0 0" scale="15 15 1" repeat="10 10">
+        </a-entity>
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ceiling" mixin="hall_ceiling"
+                  position="0 0 0" scale="15 15 1" repeat="10 10">
         </a-entity>
 
         <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_N_M1M2" scale="5 5 1">
