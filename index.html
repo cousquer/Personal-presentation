@@ -27,7 +27,9 @@
 
     </a-assets>
 
-    <!-- Global assets  -->
+
+    <!--   ---------     Global assets     ----------   -->
+
     <a-sky src="#texture_sky"></a-sky>
     <a-entity text="align: center; color: red; value: Bienvenue" width="5" position="0 1.5 -2" rotation="0 0 0"
               scale="5 5 5">
@@ -45,13 +47,15 @@
               rotation="0 180 0" scale="5 5 5">
     </a-entity>
 
-    <!-- Spawn assets  -->
+
+    <!--   ---------     Spawn assets     ----------   -->
+
     <a-mixin id="model_ground_spawn" src="#unknown" height="10" width="10" rotation="-90 0 0">
     </a-mixin>
 
-    <!-- 
-          Hall assets 
-    -->
+
+    <!--   ---------     Hall assets     ----------   -->
+
     <a-mixin id="hall_ground" height="5" width="5" position="0 0 0" rotation="-90 0 0" repeat="2 2">
     </a-mixin>
     <a-mixin id="hall_ceiling" height="5" width="5" position="0 7 0" rotation="90 0 0" repeat="2 2">
@@ -78,9 +82,8 @@
     </a-mixin>
 
 
-    <!-- 
-          Corridors assets 
-    -->
+    <!--   ---------     Corridor's assets     ----------   -->
+
     <!-- North -->
     <a-mixin id="corridor_ground_N" height="5" width="5" position="0 0 -20" rotation="-90 0 0" repeat="5 5">
     </a-mixin>
@@ -95,10 +98,10 @@
     </a-mixin>
 
 
-    <!-- 
-          Corridor's recess assets
+    <!--   ---------     Corridor's recess assets     ----------   -->
+    <!--
+        facing north 
     -->
-    <!--  ---------     facing north     ----------  -->
 
     <!-- Wall right -->
     <a-mixin id="recess_ext_facing_N_right" geometry="primitive: plane;" material="src: #texture_wall"
@@ -118,7 +121,8 @@
 
 
 
-    <!-- Scene -->
+
+    <!--   ---------     Scene     ----------   -->
 
 
     <a-entity id="museum" highlight>
