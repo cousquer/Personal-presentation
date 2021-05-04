@@ -9,6 +9,26 @@
   <script src="Aframe/aframe.min.js"></script>
   <script src="Aframe/highlight.js"></script> <!--  for the UI -->
 
+  <script>
+    // Component to change the visibility of a boat
+    AFRAME.registerComponent('changeVisibility', {
+      init: function () {
+        var flag = false;
+        this.el.object3D.visible = false;
+      },
+      update: function (oldData) {
+        console.log("You have clicked");
+        if (this.flag) {
+          this.visible = false;
+        }
+        else {
+          this.visible = true;
+        }
+        flag = !flag;
+      }
+    })
+  </script>
+
 </head>
 
 <body>
