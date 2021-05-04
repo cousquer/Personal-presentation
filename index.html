@@ -34,14 +34,14 @@
     <a-entity text="align: center; color: blue; value: North - M1 projects" width="5" position="0 1.5 -7.5"
               rotation="0 0 0" scale="5 5 5">
     </a-entity>
-    <a-entity text="align: center; color: blue; value: Est - L2-L3 projects" width="5" position="7.5 1.5 0"
-              rotation="0 0 0" scale="5 5 5">
+    <a-entity text="align: center; color: blue; value: East - L2-L3 projects" width="5" position="7.5 1.5 0"
+              rotation="0 -90 0" scale="5 5 5">
     </a-entity>
     <a-entity text="align: center; color: blue; value: West - M2 projects" width="5" position="-7.5 1.5 0"
-              rotation="0 0 0" scale="5 5 5">
+              rotation="0 90 0" scale="5 5 5">
     </a-entity>
     <a-entity text="align: center; color: blue; value: South - Other projects" width="5" position="0 1.5 7.5"
-              rotation="0 0 0" scale="5 5 5">
+              rotation="0 180 0" scale="5 5 5">
     </a-entity>
 
     <!-- Spawn assets  -->
@@ -49,7 +49,7 @@
     </a-mixin>
 
     <!-- Hall assets -->
-    <a-mixin id="Hall_ground" height="50" width="50" rotation="-90 0 0" repeat="25 25">
+    <a-mixin id="Hall_ground" height="50" width="50" rotation="-90 0 0">
     </a-mixin>
     <!-- North -->
     <a-mixin id="hall_wall_N_M1L" height="50" width="50" position="5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
@@ -84,7 +84,7 @@
         </a-entity>
 
         <a-entity geometry="primitive: plane; " material="src: #texture_hall_ground" mixin="Hall_ground"
-                  position="0 0 0" rotation="-90 0 0" scale="15 15 1">
+                  position="0 0 0" rotation="-90 0 0" scale="15 15 1" repeat="10 10">
         </a-entity>
 
         <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_N_M1M2" scale="5 5 1">
