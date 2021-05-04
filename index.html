@@ -48,31 +48,48 @@
     <a-mixin id="model_ground_spawn" src="#unknown" height="10" width="10" rotation="-90 0 0" repeat="25 25">
     </a-mixin>
 
-    <!-- Hall assets -->
-    <a-mixin id="Hall_ground" height="50" width="50" rotation="-90 0 0">
+    <!-- 
+          Hall assets 
+    -->
+    <a-mixin id="Hall_ground" height="5" width="5" rotation="-90 0 0">
     </a-mixin>
     <!-- North -->
-    <a-mixin id="hall_wall_N_M1L" height="50" width="50" position="5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
+    <a-mixin id="hall_wall_N_M1L" height="10" width="10" position="5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_N_M1M2" height="50" width="50" position="-5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
+    <a-mixin id="hall_wall_N_M1M2" height="10" width="10" position="-5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
     </a-mixin>
     <!-- East -->
-    <a-mixin id="hall_wall_E_LE" height="50" width="50" position="7.5 2.5 5" rotation="0 -90 0" repeat="25 25">
+    <a-mixin id="hall_wall_E_LE" height="10" width="10" position="7.5 2.5 5" rotation="0 -90 0" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_E_LM1" height="50" width="50" position="7.5 2.5 -5" rotation="0 -90 0" repeat="25 25">
+    <a-mixin id="hall_wall_E_LM1" height="10" width="10" position="7.5 2.5 -5" rotation="0 -90 0" repeat="25 25">
     </a-mixin>
     <!-- West -->
-    <a-mixin id="hall_wall_W_M2E" height="50" width="50" position="-7.5 2.5 5" rotation="0 90 0" repeat="25 25">
+    <a-mixin id="hall_wall_W_M2E" height="10" width="10" position="-7.5 2.5 5" rotation="0 90 0" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_W_M2M1" height="50" width="50" position="-7.5 2.5 -5" rotation="0 90 0" repeat="25 25">
+    <a-mixin id="hall_wall_W_M2M1" height="10" width="10" position="-7.5 2.5 -5" rotation="0 90 0" repeat="25 25">
     </a-mixin>
     <!-- South -->
-    <a-mixin id="hall_wall_S_EL" height="50" width="50" position="5 2.5 7.5" rotation="180 0 180" repeat="25 25">
+    <a-mixin id="hall_wall_S_EL" height="10" width="10" position="5 2.5 7.5" rotation="180 0 180" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_S_EM2" height="50" width="50" position="-5 2.5 7.5" rotation="180 0 180" repeat="25 25">
+    <a-mixin id="hall_wall_S_EM2" height="10" width="10" position="-5 2.5 7.5" rotation="180 0 180" repeat="25 25">
     </a-mixin>
 
 
+    <!-- 
+          Corridors assets 
+    -->
+    <!-- North -->
+    <a-mixin id="corridor_ground_N" height="30" width="5" position="5 2.5 -7.5" rotation="-90 0 0" repeat="25 25">
+    </a-mixin>
+    <!-- East -->
+    <a-mixin id="corridor_ground_E" height="30" width="5" position="7.5 2.5 5" rotation="-90 -90 0" repeat="25 25">
+    </a-mixin>
+    <!-- West -->
+    <a-mixin id="corridor_ground_W" height="30" width="5" position="-7.5 2.5 5" rotation="-90 90 0" repeat="25 25">
+    </a-mixin>
+    <!-- South -->
+    <a-mixin id="corridor_ground_S" height="30" width="5" position="5 2.5 7.5" rotation="90 0 180" repeat="25 25">
+    </a-mixin>
 
     <!-- Scene -->
     <a-entity id="museum" highlight>
@@ -102,6 +119,34 @@
         <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_S_EL" scale="5 5 1">
         </a-entity>
         <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_S_EM2" scale="5 5 1">
+        </a-entity>
+      </a-entity>
+
+      <!-- North part - M1 -->
+      <a-entity id="North">
+        <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_N"
+                  scale="5 5 1">
+        </a-entity>
+      </a-entity>
+
+      <!-- East part - M1 -->
+      <a-entity id="East">
+        <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_E"
+                  scale="5 5 1">
+        </a-entity>
+      </a-entity>
+
+      <!-- West part - M1 -->
+      <a-entity id="West">
+        <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_W"
+                  scale="5 5 1">
+        </a-entity>
+      </a-entity>
+
+      <!-- South part - M1 -->
+      <a-entity id="South">
+        <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_S"
+                  scale="5 5 1">
         </a-entity>
       </a-entity>
     </a-entity>
