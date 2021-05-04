@@ -52,29 +52,29 @@
     <!-- 
           Hall assets 
     -->
-    <a-mixin id="hall_ground" height="5" width="5" rotation="-90 0 0">
+    <a-mixin id="hall_ground" height="5" width="5" position="0 0 0" rotation="-90 0 0">
     </a-mixin>
-    <a-mixin id="hall_ceiling" height="5" width="5" rotation="-90 90 0">
+    <a-mixin id="hall_ceiling" height="5" width="5" position="0 7 0" rotation="90 0 0">
     </a-mixin>
     <!-- North -->
-    <a-mixin id="hall_wall_N_M1L" height="10" width="10" position="5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
+    <a-mixin id="hall_wall_N_M1L" height="5" width="5" position="5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_N_M1M2" height="10" width="10" position="-5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
+    <a-mixin id="hall_wall_N_M1M2" height="5" width="5" position="-5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
     </a-mixin>
     <!-- East -->
-    <a-mixin id="hall_wall_E_LE" height="10" width="10" position="7.5 2.5 5" rotation="0 -90 0" repeat="25 25">
+    <a-mixin id="hall_wall_E_LE" height="5" width="5" position="7.5 2.5 5" rotation="0 -90 0" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_E_LM1" height="10" width="10" position="7.5 2.5 -5" rotation="0 -90 0" repeat="25 25">
+    <a-mixin id="hall_wall_E_LM1" height="10" width="5" position="7.5 2.5 -5" rotation="0 -90 0" repeat="25 25">
     </a-mixin>
     <!-- West -->
-    <a-mixin id="hall_wall_W_M2E" height="10" width="10" position="-7.5 2.5 5" rotation="0 90 0" repeat="25 25">
+    <a-mixin id="hall_wall_W_M2E" height="5" width="5" position="-7.5 2.5 5" rotation="0 90 0" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_W_M2M1" height="10" width="10" position="-7.5 2.5 -5" rotation="0 90 0" repeat="25 25">
+    <a-mixin id="hall_wall_W_M2M1" height="5" width="5" position="-7.5 2.5 -5" rotation="0 90 0" repeat="25 25">
     </a-mixin>
     <!-- South -->
-    <a-mixin id="hall_wall_S_EL" height="10" width="10" position="5 2.5 7.5" rotation="180 0 180" repeat="25 25">
+    <a-mixin id="hall_wall_S_EL" height="5" width="5" position="5 2.5 7.5" rotation="180 0 180" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_S_EM2" height="10" width="10" position="-5 2.5 7.5" rotation="180 0 180" repeat="25 25">
+    <a-mixin id="hall_wall_S_EM2" height="5" width="5" position="-5 2.5 7.5" rotation="180 0 180" repeat="25 25">
     </a-mixin>
 
 
@@ -109,11 +109,11 @@
                   scale="3 3 1">
         </a-entity>
 
-        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ground" mixin="hall_ground"
-                  position="0 0 0" scale="15 15 1" repeat="10 10">
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ground" mixin="hall_ground" scale="15 15 1"
+                  repeat="10 10">
         </a-entity>
         <a-entity geometry="primitive: plane; " material="src: #texture_hall_ceiling" mixin="hall_ceiling"
-                  position="0 0 0" scale="15 15 1" repeat="10 10">
+                  scale="15 15 1" repeat="10 10">
         </a-entity>
 
         <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_N_M1M2" scale="5 5 1">
