@@ -95,6 +95,27 @@
     </a-mixin>
 
 
+    <!-- 
+          Corridor's recess assets 
+    -->
+    <a-mixin id="recess_facing_N">
+      <!-- Wall right -->
+      <a-entity geometry="primitive: plane;" material="src: #texture_wall" position="11.5 2.5 0" rotation="0 0 0"
+                scale="2.5 5 1">
+      </a-entity>
+      <!-- Wall left -->
+      <a-entity geometry="primitive: plane;" material="src: #texture_wall" position="-11.5 2.5 0" rotation="-90 0 0"
+                scale="2.5 5 1">
+      </a-entity>
+      <!-- Wall up -->
+      <a-entity geometry="primitive: plane;" material="src: #texture_wall" position="0 4 0" rotation="-90 0 0"
+                scale="5 5 1">
+      </a-entity>
+      <!-- Wall doawn -->
+      <a-entity geometry="primitive: plane;" material="src: #texture_wall" position="0 0.5 0" rotation="-90 0 0"
+                scale="5 5 1">
+      </a-entity>
+    </a-mixin>
 
 
 
@@ -138,6 +159,8 @@
       <a-entity id="North">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_N"
                   scale="5 25 1">
+        </a-entity>
+        <a-entity geometry="primitive: plane; " mixin="recess_facing_N" position="10 1 10" scale="1 1 1">
         </a-entity>
       </a-entity>
 
