@@ -39,12 +39,12 @@
     <!-- Hall assets -->
     <a-mixin id="Hall_ground" height="50" width="50" rotation="-90 0 0" repeat="25 25">
     </a-mixin>
-    <!-- North
-    <a-mixin id="hall_wall_LM1" height="50" width="50" rotation="-90 0 0" repeat="25 25">
+    <!-- North -->
+    <a-mixin id="hall_wall_M1M2" height="50" width="50" position="5 2.5 7.5" rotation="0 0 0" repeat="25 25">
     </a-mixin>
-    <a-mixin id="hall_wall_LE" height="50" width="50" rotation="-90 0 0" repeat="25 25">
+    <a-mixin id="hall_wall_M1L" height="50" width="50" position="5 2.5 -7.5" rotation="0 0 0" repeat="25 25">
     </a-mixin>
-     -->
+    </a-mixin>
     <!-- East -->
     <a-mixin id="hall_wall_LM1" height="50" width="50" position="7.5 2.5 5" rotation="0 -90 0" repeat="25 25">
     </a-mixin>
@@ -53,18 +53,23 @@
 
 
 
-    <!-- Scene test -->
+    <!-- Scene -->
     <a-entity id="museum" highlight>
 
+      <!-- Hall / Spawn -->
       <a-entity id="hall">
         <a-entity geometry="primitive: plane; " mixin="ground_spawn" position="0 0.005 0" rotation="-90 0 0"
                   scale="3 3 1">
         </a-entity>
 
-        <a-entity geometry="primitive: plane; " material="src: #texture_ground_hall" mixin="Hall_ground"
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ground" mixin="Hall_ground"
                   position="0 0 0" rotation="-90 0 0" scale="15 15 1">
         </a-entity>
 
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_M1M2" scale="5 5 1">
+        </a-entity>
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_M1L" scale="5 5 1">
+        </a-entity>
         <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_LM1" scale="5 5 1">
         </a-entity>
         <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_LE" scale="5 5 1">
