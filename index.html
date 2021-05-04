@@ -46,7 +46,7 @@
 
     <!-- Global assets  -->
     <a-sky src="#sky"></a-sky>
-    <a-entity text="align: center; color: red; value: Bienvenue" width="5" position="0 1.5 2" rotation="0 0 0"
+    <a-entity text="align: center; color: red; value: Bienvenue" width="5" position="0 1.5 -2" rotation="0 0 0"
               scale="5 5 5">
     </a-entity>
 
@@ -55,14 +55,14 @@
     </a-mixin>
 
     <!-- Hall assets -->
-    <a-mixin id="ground_hall" src="#ground" height="50" width="50" rotation="-90 0 0" repeat="25 25">
+    <a-mixin id="ground_hall" height="50" width="50" rotation="-90 0 0" repeat="25 25">
     </a-mixin>
 
     <!-- Scene test -->
     <a-entity id="museum" highlight>
-      <a-entity geometry="primitive: plane; " mixin="ground_spawn" position="0 0.005 0" rotation="-90 0 0"
-                scale="3 1 3"></a-entity>
-      <a-entity geometry="primitive: plane; " mixin="ground_hall" position="0 0 0" rotation="-90 0 0" scale="10 1 10">
+      <a-entity geometry="primitive: plane; " src="#ground" mixin="ground_spawn" position="0 0.005 0" rotation="-90 0 0"
+                scale="3 3 1"></a-entity>
+      <a-entity geometry="primitive: plane; " mixin="ground_hall" position="0 0 0" rotation="-90 0 0" scale="10 10 1">
       </a-entity>
     </a-entity>
 
