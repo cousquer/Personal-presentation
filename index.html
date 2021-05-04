@@ -37,7 +37,7 @@
 
       <img id="sea" src="assets/img/sea.jpg" />
       <img id="sky" src="assets/img/sky.jpg" />
-      <img id="gound" src="assets/img/ground.jpg" />
+      <img id="ground" src="assets/img/ground.jpg" />
 
       <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
@@ -60,8 +60,8 @@
 
     <!-- Scene test -->
     <a-entity id="museum" highlight>
-      <a-entity geometry="primitive: plane; " src="#ground" mixin="ground_spawn" position="0 0.005 0" rotation="-90 0 0"
-                scale="3 3 1"></a-entity>
+      <a-entity geometry="primitive: plane; " material="src: #ground" mixin="ground_spawn" position="0 0.005 0"
+                rotation="-90 0 0" scale="3 3 1"></a-entity>
       <a-entity geometry="primitive: plane; " mixin="ground_hall" position="0 0 0" rotation="-90 0 0" scale="10 10 1">
       </a-entity>
     </a-entity>
