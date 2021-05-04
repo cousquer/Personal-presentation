@@ -16,7 +16,10 @@
     <a-assets>
 
       <img id="sky" src="assets/img/sky.jpg" />
-      <img id="ground" src="assets/img/ground.jpg" />
+      <img id="wall" src="assets/img/wall.jpg" />
+
+      <img id="hall_ground" src="assets/img/ground.jpg" />
+      <img id="corridor_ground" src="assets/img/corridor-ground.jpg" />
 
       <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
@@ -36,13 +39,36 @@
     <!-- Hall assets -->
     <a-mixin id="ground_hall" height="50" width="50" rotation="-90 0 0" repeat="25 25">
     </a-mixin>
+    <!-- North
+    <a-mixin id="hall_wall_LM1" height="50" width="50" rotation="-90 0 0" repeat="25 25">
+    </a-mixin>
+    <a-mixin id="hall_wall_LE" height="50" width="50" rotation="-90 0 0" repeat="25 25">
+    </a-mixin>
+     -->
+    <!-- East -->
+    <a-mixin id="hall_wall_LM1" height="50" width="50" position="7.5 2.5 4.5" rotation="0 -90 0" repeat="25 25">
+    </a-mixin>
+    <a-mixin id="hall_wall_LE" height="50" width="50" position="7.5 2.5 -4.5" rotation="0 -90 0" repeat="25 25">
+    </a-mixin>
+
+
 
     <!-- Scene test -->
     <a-entity id="museum" highlight>
-      <a-entity geometry="primitive: plane; " mixin="ground_spawn" position="0 0.005 0" rotation="-90 0 0"
-                scale="3 3 1"></a-entity>
-      <a-entity geometry="primitive: plane; " material="src: #ground" mixin="ground_hall" position="0 0 0"
-                rotation="-90 0 0" scale="15 15 1">
+
+      <a-entity id="hall">
+        <a-entity geometry="primitive: plane; " mixin="ground_spawn" position="0 0.005 0" rotation="-90 0 0"
+                  scale="3 3 1">
+        </a-entity>
+
+        <a-entity geometry="primitive: plane; " material="src: #ground" mixin="hall_ground" position="0 0 0"
+                  rotation="-90 0 0" scale="15 15 1">
+        </a-entity>
+
+        <a-entity geometry="primitive: plane; " material="src: #wall" mixin="hall_wall_LM1" scale="6 5 1">
+        </a-entity>
+        <a-entity geometry="primitive: plane; " material="src: #wall" mixin="hall_wall_LE" scale="6 5 1">
+        </a-entity>
       </a-entity>
     </a-entity>
 
