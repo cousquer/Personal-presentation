@@ -96,25 +96,23 @@
 
 
     <!-- 
-          Corridor's recess assets 
+          Corridor's recess assets
     -->
-    <a-mixin id="recess_facing_N">
-      <!-- Wall right -->
-      <a-entity geometry="primitive: plane;" material="src: #texture_wall" position="11.5 2.5 0" rotation="0 0 0"
-                scale="2.5 5 1">
-      </a-entity>
-      <!-- Wall left -->
-      <a-entity geometry="primitive: plane;" material="src: #texture_wall" position="-11.5 2.5 0" rotation="-90 0 0"
-                scale="2.5 5 1">
-      </a-entity>
-      <!-- Wall up -->
-      <a-entity geometry="primitive: plane;" material="src: #texture_wall" position="0 4 0" rotation="-90 0 0"
-                scale="5 5 1">
-      </a-entity>
-      <!-- Wall doawn -->
-      <a-entity geometry="primitive: plane;" material="src: #texture_wall" position="0 0.5 0" rotation="-90 0 0"
-                scale="5 5 1">
-      </a-entity>
+    <!--  ---------     facing north     ----------  -->
+
+    <!-- Wall right -->
+    <a-mixin id="recess_ext_facing_N_right" geometry="primitive: plane;" material="src: #texture_wall" rotation="0 0 0">
+    </a-mixin>
+    <!-- Wall left -->
+    <a-mixin id="recess_ext_facing_N_left" geometry="primitive: plane;" material="src: #texture_wall"
+             rotation="-90 0 0">
+    </a-mixin>
+    <!-- Wall up -->
+    <a-mixin id="recess_ext_facing_N_top" geometry="primitive: plane;" material="src: #texture_wall" rotation="-90 0 0">
+    </a-mixin>
+    <!-- Wall doawn -->
+    <a-mixin id="recess_ext_facing_N_bottom" geometry="primitive: plane;" material="src: #texture_wall"
+             rotation="-90 0 0">
     </a-mixin>
 
 
@@ -158,30 +156,31 @@
       <!-- North part - M1 -->
       <a-entity id="North">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_N"
-                  scale="5 25 1">
+                  scale="6 25 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " mixin="recess_facing_N" position="10 1 10" scale="25 5 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_right"
+                  scale="2.5 5 1" position="10 2.5 10">
         </a-entity>
       </a-entity>
 
       <!-- East part - M1 -->
       <a-entity id="East">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_E"
-                  scale="25 5 1">
+                  scale="25 6 1">
         </a-entity>
       </a-entity>
 
       <!-- West part - M1 -->
       <a-entity id="West">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_W"
-                  scale="25 5 1">
+                  scale="25 6 1">
         </a-entity>
       </a-entity>
 
       <!-- South part - M1 -->
       <a-entity id="South">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_S"
-                  scale="5 25 1">
+                  scale="6 25 1">
         </a-entity>
       </a-entity>
     </a-entity>
