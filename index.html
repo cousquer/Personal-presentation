@@ -185,19 +185,19 @@
     </a-mixin><!-- Wall down -->
 
     <a-mixin id="recess_int_facing_W_down" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 2 1" rotation="-90 180 0">
+             scale="10 2 1" rotation="-90 180 90">
     </a-mixin><!-- Recess down -->
     <a-mixin id="recess_int_facing_W_up" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 2 1" rotation="90 180 0">
+             scale="10 2 1" rotation="90 180 90">
     </a-mixin><!-- Recess up -->
     <a-mixin id="recess_int_facing_W_right" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="2 3 1" rotation="0 90 0">
+             scale="2 3 1" rotation="0 180 0">
     </a-mixin><!-- Recess right -->
     <a-mixin id="recess_int_facing_W_left" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="2 3 1" rotation="0 -90 0">
+             scale="2 3 1" rotation="0 0 0">
     </a-mixin><!-- Recess left -->
     <a-mixin id="recess_int_facing_W_back" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 3 1" rotation="0 180 0">
+             scale="10 3 1" rotation="0 -90 0">
     </a-mixin><!-- Recess back -->
 
 
@@ -268,6 +268,34 @@
           </a-entity>
           <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_W_back"
                     position="5 2.5 -14">
+          </a-entity>
+        </a-entity>
+
+        <a-entity id="Parking">
+          <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_hall"
+                    position="3 2.5 -20.25">
+          </a-entity>
+          <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_top"
+                    position="3 4.5 -26.5">
+          </a-entity>
+          <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_bottom"
+                    position="3 0.5 -26.5">
+          </a-entity>
+
+          <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_W_down"
+                    position="4 1 -26.5">
+          </a-entity>
+          <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_W_up"
+                    position="4 4 -26.5">
+          </a-entity>
+          <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_W_right"
+                    position="4 2.5 -21.5">
+          </a-entity>
+          <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_W_left"
+                    position="4 2.5 -31.5">
+          </a-entity>
+          <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_W_back"
+                    position="5 2.5 -26.5">
           </a-entity>
         </a-entity>
 
