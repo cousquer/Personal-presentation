@@ -104,18 +104,19 @@
     -->
 
     <!-- Wall right -->
-    <a-mixin id="recess_ext_facing_N_right" geometry="primitive: plane;" material="src: #texture_wall"
+    <a-mixin id="recess_ext_facing_N_right" geometry="primitive: plane;" material="src: #texture_wall" scale="2.5 5 1"
              rotation="0 180 0">
     </a-mixin>
     <!-- Wall left -->
-    <a-mixin id="recess_ext_facing_N_left" geometry="primitive: plane;" material="src: #texture_wall"
+    <a-mixin id="recess_ext_facing_N_left" geometry="primitive: plane;" material="src: #texture_wall" scale="2.5 5 1"
              rotation="0 180 0">
     </a-mixin>
-    <!-- Wall up -->
-    <a-mixin id="recess_ext_facing_N_top" geometry="primitive: plane;" material="src: #texture_wall" rotation="0 180 0">
+    <!-- Wall top -->
+    <a-mixin id="recess_ext_facing_N_top" geometry="primitive: plane;" material="src: #texture_wall" scale="10 1 1"
+             rotation="0 180 0">
     </a-mixin>
-    <!-- Wall doawn -->
-    <a-mixin id="recess_ext_facing_N_bottom" geometry="primitive: plane;" material="src: #texture_wall"
+    <!-- Wall down -->
+    <a-mixin id="recess_ext_facing_N_bottom" geometry="primitive: plane;" material="src: #texture_wall" scale="10 1 1"
              rotation="0 180 0">
     </a-mixin>
 
@@ -166,16 +167,16 @@
 
         <a-entity id="BwarioKart">
           <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_right"
-                    scale="2.5 5 1" position="8.75 2.5 3">
+                    position="8.75 2.5 3">
           </a-entity>
           <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_left"
-                    scale="2.5 5 1" position="21.25 2.5 3">
+                    position="21.25 2.5 3">
           </a-entity>
           <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_top"
-                    scale="10 2 1" position="15 4 3">
+                    position="15 4 4">
           </a-entity>
           <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_bottom"
-                    scale="10 1 1" position="15 0.5 3">
+                    position="15 0.5 3">
           </a-entity>
         </a-entity>
       </a-entity>
