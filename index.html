@@ -110,28 +110,28 @@
     <a-mixin id="recess_ext_facing_N_inter" geometry="primitive: plane;" material="src: #texture_wall" scale="2.5 5 1"
              rotation="0 180 0">
     </a-mixin><!-- Wall inter recess -->
-    <a-mixin id="recess_ext_facing_N_top" geometry="primitive: plane;" material="src: #texture_wall" scale="10 1 1"
+    <a-mixin id="recess_ext_facing_N_top" geometry="primitive: plane;" material="src: #texture_wall" scale="2 3 1"
              rotation="0 180 0">
     </a-mixin><!-- Wall top -->
-    <a-mixin id="recess_ext_facing_N_bottom" geometry="primitive: plane;" material="src: #texture_wall" scale="10 1 1"
+    <a-mixin id="recess_ext_facing_N_bottom" geometry="primitive: plane;" material="src: #texture_wall" scale="2 3 1"
              rotation="0 180 0">
     </a-mixin><!-- Wall down -->
 
 
     <a-mixin id="recess_int_facing_N_down" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 1 1" rotation="0 180 0">
+             scale="10 2 1" rotation="-90 180 0">
     </a-mixin><!-- Recess down -->
     <a-mixin id="recess_int_facing_N_up" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 1 1" rotation="0 180 0">
+             scale="10 2 1" rotation="90 180 0">
     </a-mixin><!-- Recess up -->
     <a-mixin id="recess_int_facing_N_right" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 1 1" rotation="0 180 0">
+             scale="10 1 1" rotation="0 90 0">
     </a-mixin><!-- Recess right -->
     <a-mixin id="recess_int_facing_N_left" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 1 1" rotation="0 180 0">
+             scale="10 1 1" rotation="0 -90 0">
     </a-mixin><!-- Recess left -->
     <a-mixin id="recess_int_facing_N_back" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 1 1" rotation="0 180 0">
+             scale="10 3 1" rotation="0 180 0">
     </a-mixin><!-- Recess back -->
 
 
@@ -198,23 +198,23 @@
 
 
           <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_N_down"
-                    position="14 0.5 3.5">
+                    position="14 1 4">
           </a-entity>
 
           <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_N_up"
-                    position="14 3.5 3.5">
+                    position="14 4 4">
           </a-entity>
 
           <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_N_right"
-                    position="9 0.5 3">
+                    position="9 2.5 4">
           </a-entity>
 
           <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_N_left"
-                    position="19 0.5 3">
+                    position="19 2.5 4">
           </a-entity>
 
           <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_N_back"
-                    position="14 0.5 4.5">
+                    position="14 2.5 5">
           </a-entity>
         </a-entity>
 
@@ -223,10 +223,10 @@
                     position="20.25 2.5 3">
           </a-entity>
           <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_top"
-                    position="24 4.5 3">
+                    position="26.5 4.5 3">
           </a-entity>
           <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_bottom"
-                    position="24 0.5 3">
+                    position="26.5 0.5 3">
           </a-entity>
         </a-entity>
       </a-entity>
