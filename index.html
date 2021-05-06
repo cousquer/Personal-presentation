@@ -17,6 +17,7 @@
 
       <img id="texture_sky" src="assets/img/sky.jpg" />
       <img id="texture_wall" src="assets/img/wall.jpg" />
+      <img id="texture_wip" src="assets/img/wip.jpg" />
 
       <img id="texture_hall_ground" src="assets/img/hall-ground.jpg" />
       <img id="texture_hall_ceiling" src="assets/img/hall-ceiling.jpg" />
@@ -682,6 +683,9 @@
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_W"
                   scale="51 6 1">
         </a-entity>
+
+        <a-plane src="#texture_wip" height="100" width="100" rotation="0 0 0" repeat="500 500" position="0 0 -3">
+        </a-plane>
       </a-entity>
 
       <!-- South part - Other projects -->
@@ -690,10 +694,69 @@
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_S"
                   scale="6 51 1">
         </a-entity>
+
+        <a-entity id="WallRight">
+          <a-entity id="ThisProject">
+            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_hall"
+                      position="3 2.5 8.25">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_middle"
+                      position="3 4.5 14">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_middle"
+                      position="3 0.5 14">
+            </a-entity>
+
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_W_down" position="4 1 14">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_W_up"
+                      position="4 4 14">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_W_right" position="4 2.5 9">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_W_left" position="4 2.5 19">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_W_back" position="5 2.5 14">
+            </a-entity>
+          </a-entity>
+        </a-entity>
+
+        <a-entity id="WallLeft">
+          <a-entity id="Dimension">
+            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_E_hall"
+                      position="-3 2.5 8.25">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_E_middle"
+                      position="-3 4.5 14">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_E_middle"
+                      position="-3 0.5 14">
+            </a-entity>
+
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_E_down" position="-4 1 14">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_E_up"
+                      position="-4 4 14">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_E_right" position="-4 2.5 9">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_E_left" position="-4 2.5 19">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_E_back" position="-5 2.5 14">
+            </a-entity>
+          </a-entity>
+        </a-entity>
+
       </a-entity>
     </a-entity>
-
-
   </a-scene>
 </body>
 
