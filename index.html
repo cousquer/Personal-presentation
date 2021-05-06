@@ -87,16 +87,24 @@
     <!--   ---------     Corridor's assets     ----------   -->
 
     <!-- North -->
-    <a-mixin id="corridor_ground_N" height="5" width="5" position="0 0 -33" rotation="-90 0 0" repeat="5 5">
+    <a-mixin id="corridor_ground_N" position="0 0 -33" rotation="-90 0 0" repeat="5 5">
+    </a-mixin>
+    <a-mixin id="corridor_ceiling_N" position="0 5 -33" rotation="-90 0 0" repeat="5 5">
     </a-mixin>
     <!-- East -->
-    <a-mixin id="corridor_ground_E" height="5" width="5" position="33 0 0" rotation="-90 0 0" repeat="5 5">
+    <a-mixin id="corridor_ground_E" position="33 0 0" rotation="-90 0 0" repeat="5 5">
+    </a-mixin>
+    <a-mixin id="corridor_ceiling_E" position="33 5 0" rotation="-90 0 0" repeat="5 5">
     </a-mixin>
     <!-- West -->
-    <a-mixin id="corridor_ground_W" height="5" width="5" position="-33 0 0" rotation="-90 0 0" repeat="5 5">
+    <a-mixin id="corridor_ground_W" position="-33 0 0" rotation="-90 0 0" repeat="5 5">
+    </a-mixin>
+    <a-mixin id="corridor_ceiling_W" position="-33 5 0" rotation="-90 0 0" repeat="5 5">
     </a-mixin>
     <!-- South -->
-    <a-mixin id="corridor_ground_S" height="5" width="5" position="0 0 33" rotation="-90 0 0" repeat="5 5">
+    <a-mixin id="corridor_ground_S" position="0 0 33" rotation="-90 0 0" repeat="5 5">
+    </a-mixin>
+    <a-mixin id="corridor_ceiling_S" position="0 5 33" rotation="-90 0 0" repeat="5 5">
     </a-mixin>
 
 
@@ -265,6 +273,9 @@
 
       <a-entity id="North">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_N"
+                  scale="6 51 1">
+        </a-entity>>
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ceiling" mixin="corridor_ceiling_N"
                   scale="6 51 1">
         </a-entity>
         <a-plane src="#texture_wall" height="5" width="6" rotation="0 0 0" repeat="1 1" position="0 2.5 -58.5">
@@ -511,6 +522,9 @@
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_E"
                   scale="51 6 1">
         </a-entity>
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ceiling" mixin="corridor_ceiling_E"
+                  scale="6 51 1">
+        </a-entity>
         <a-plane src="#texture_wall" height="5" width="6" rotation="0 -90 0" repeat="1 1" position="58.5 2.5 0">
         </a-plane><!-- End corridor -->
 
@@ -703,6 +717,9 @@
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_W"
                   scale="51 6 1">
         </a-entity>
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ceiling" mixin="corridor_ceiling_W"
+                  scale="6 51 1">
+        </a-entity>
         <a-plane src="#texture_wall" height="5" width="6" rotation="0 90 0" repeat="1 1" position="-15 2.5 0">
         </a-plane><!-- End corridor -->
 
@@ -714,6 +731,9 @@
 
       <a-entity id="South">
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_S"
+                  scale="6 51 1">
+        </a-entity>
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ceiling" mixin="corridor_ceiling_S"
                   scale="6 51 1">
         </a-entity>
         <a-plane src="#texture_wall" height="5" width="6" rotation="0 180 0" repeat="1 1" position="0 2.5 21">
