@@ -684,7 +684,7 @@
                   scale="51 6 1">
         </a-entity>
 
-        <a-plane src="#texture_wip" height="100" width="100" rotation="0 0 0" repeat="500 500" position="0 0 -3">
+        <a-plane src="#texture_wip" height="4" width="4" rotation="0 90 0" repeat="1 1" position="-3 2 0">
         </a-plane>
       </a-entity>
 
@@ -697,36 +697,6 @@
 
         <a-entity id="WallRight">
           <a-entity id="ThisProject">
-            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_hall"
-                      position="3 2.5 8.25">
-            </a-entity>
-            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_middle"
-                      position="3 4.5 14">
-            </a-entity>
-            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_middle"
-                      position="3 0.5 14">
-            </a-entity>
-
-            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
-                      mixin="recess_int_facing_W_down" position="4 1 14">
-            </a-entity>
-            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_W_up"
-                      position="4 4 14">
-            </a-entity>
-            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
-                      mixin="recess_int_facing_W_right" position="4 2.5 9">
-            </a-entity>
-            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
-                      mixin="recess_int_facing_W_left" position="4 2.5 19">
-            </a-entity>
-            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
-                      mixin="recess_int_facing_W_back" position="5 2.5 14">
-            </a-entity>
-          </a-entity>
-        </a-entity>
-
-        <a-entity id="WallLeft">
-          <a-entity id="Dimension">
             <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_E_hall"
                       position="-3 2.5 8.25">
             </a-entity>
@@ -751,6 +721,36 @@
             </a-entity>
             <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
                       mixin="recess_int_facing_E_back" position="-5 2.5 14">
+            </a-entity>
+          </a-entity>
+        </a-entity>
+
+        <a-entity id="WallLeft">
+          <a-entity id="Dimension">
+            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_hall"
+                      position="3 2.5 8.25">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_middle"
+                      position="3 4.5 14">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_W_middle"
+                      position="3 0.5 14">
+            </a-entity>
+
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_W_down" position="4 1 14">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall" mixin="recess_int_facing_W_up"
+                      position="4 4 14">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_W_right" position="4 2.5 9">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_W_left" position="4 2.5 19">
+            </a-entity>
+            <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
+                      mixin="recess_int_facing_W_back" position="5 2.5 14">
             </a-entity>
           </a-entity>
         </a-entity>
