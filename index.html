@@ -630,6 +630,10 @@
             <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
                       mixin="recess_int_facing_S_back" position="26.5 2.5 -5">
             </a-entity>
+
+            <!-- Fill blank space -->
+            <a-plane src="#texture_wall" height="5" width="24" rotation="0 0 0" repeat="1 1" position="32.75 2.5 -3">
+            </a-plane>
           </a-entity>
 
           <a-entity id="Graphs">
@@ -712,7 +716,7 @@
         <a-entity geometry="primitive: plane; " material="src: #texture_corridor_ground" mixin="corridor_ground_S"
                   scale="6 51 1">
         </a-entity>
-        <a-plane src="#texture_wall" height="5" width="6" rotation="0 180 0" repeat="1 1" position="0 2.5 58.5">
+        <a-plane src="#texture_wall" height="5" width="6" rotation="0 180 0" repeat="1 1" position="0 2.5 21">
         </a-plane><!-- End corridor -->
 
         <a-entity id="WallRight">
@@ -744,7 +748,7 @@
             </a-entity>
           </a-entity>
 
-          <a-plane src="#texture_wall" height="5" width="2" rotation="0 90 0" repeat="1 1" position="-3 2.5 57.5">
+          <a-plane src="#texture_wall" height="5" width="2" rotation="0 90 0" repeat="1 1" position="-3 2.5 20">
           </a-plane>
         </a-entity>
 
@@ -777,7 +781,7 @@
             </a-entity>
           </a-entity>
 
-          <a-plane src="#texture_wall" height="5" width="2" rotation="0 -90 0" repeat="1 1" position="3 2.5 57.5">
+          <a-plane src="#texture_wall" height="5" width="2" rotation="0 -90 0" repeat="1 1" position="3 2.5 20">
           </a-plane>
         </a-entity>
 
