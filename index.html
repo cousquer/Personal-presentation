@@ -571,7 +571,11 @@
             </a-entity>
           </a-entity>
 
+
           <a-plane src="#texture_wall" height="5" width="2" rotation="0 180 0" repeat="1 1" position="57.5 2.5 3">
+          </a-plane>
+          <!-- Fill blank space -->
+          <a-plane src="#texture_wall" height="5" width="22" rotation="0 180 0" repeat="1 1" position="45.25 2.5 3">
           </a-plane>
         </a-entity>
 
@@ -630,10 +634,6 @@
             <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
                       mixin="recess_int_facing_S_back" position="26.5 2.5 -5">
             </a-entity>
-
-            <!-- Fill blank space -->
-            <a-plane src="#texture_wall" height="5" width="22" rotation="0 180 0" repeat="1 1" position="45.25 2.5 3">
-            </a-plane>
           </a-entity>
 
           <a-entity id="Graphs">
