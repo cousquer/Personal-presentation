@@ -56,7 +56,7 @@
 
     <!--   ---------     Spawn assets     ----------   -->
 
-    <a-mixin id="ground_spawn" src="#texture_spawn_ground" height="10" width="10" rotation="-90 0 0">
+    <a-mixin id="ground_spawn" src="#texture_spawn_ground" rotation="-90 0 0">
     </a-mixin>
 
 
@@ -72,6 +72,7 @@
     </a-mixin>
     <a-mixin id="hall_hidden" geometry="primitive: plane;" material="src: #texture_hall_hidden; repeat: 1 10">
     </a-mixin>
+
 
     <!--   ---------     Corridor's assets     ----------   -->
 
@@ -98,67 +99,6 @@
     <a-mixin id="recess_int_left" geometry="primitive: plane;" material="src: #texture_recess_wall">
     </a-mixin><!-- Recess left -->
     <a-mixin id="recess_int_back" geometry="primitive: plane;" material="src: #texture_recess_wall">
-    </a-mixin><!-- Recess back -->
-
-    <!--
-        facing West 
-    -->
-
-    <a-mixin id="recess_ext_facing_W_hall" geometry="primitive: plane;" material="src: #texture_wall" scale="1.5 5 1"
-             rotation="0 -90 0">
-    </a-mixin><!-- Wall stuck to the hall -->
-    <a-mixin id="recess_ext_facing_W_inter" geometry="primitive: plane;" material="src: #texture_wall" scale="2.5 5 1"
-             rotation="0 -90 0">
-    </a-mixin><!-- Wall inter recess -->
-    <a-mixin id="recess_ext_facing_W_middle" geometry="primitive: plane;" material="src: #texture_wall" scale="10 1 1"
-             rotation="0 -90 0">
-    </a-mixin><!-- Wall middle -->
-
-    <a-mixin id="recess_int_facing_W_down" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 2 1" rotation="-90 180 90">
-    </a-mixin><!-- Recess down -->
-    <a-mixin id="recess_int_facing_W_up" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 2 1" rotation="90 180 90">
-    </a-mixin><!-- Recess up -->
-    <a-mixin id="recess_int_facing_W_right" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="2 3 1" rotation="0 180 0">
-    </a-mixin><!-- Recess right -->
-    <a-mixin id="recess_int_facing_W_left" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="2 3 1" rotation="0 0 0">
-    </a-mixin><!-- Recess left -->
-    <a-mixin id="recess_int_facing_W_back" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 3 1" rotation="0 -90 0">
-    </a-mixin><!-- Recess back -->
-
-
-    <!--
-        facing East 
-    -->
-
-    <a-mixin id="recess_ext_facing_E_hall" geometry="primitive: plane;" material="src: #texture_wall" scale="1.5 5 1"
-             rotation="0 90 0">
-    </a-mixin><!-- Wall stuck to the hall -->
-    <a-mixin id="recess_ext_facing_E_inter" geometry="primitive: plane;" material="src: #texture_wall" scale="2.5 5 1"
-             rotation="0 90 0">
-    </a-mixin><!-- Wall inter recess -->
-    <a-mixin id="recess_ext_facing_E_middle" geometry="primitive: plane;" material="src: #texture_wall" scale="10 1 1"
-             rotation="0 90 0">
-    </a-mixin><!-- Wall middle -->
-
-    <a-mixin id="recess_int_facing_E_down" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 2 1" rotation="-90 0 90">
-    </a-mixin><!-- Recess down -->
-    <a-mixin id="recess_int_facing_E_up" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 2 1" rotation="90 0 90">
-    </a-mixin><!-- Recess up -->
-    <a-mixin id="recess_int_facing_E_right" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="2 3 1" rotation="0 180 0">
-    </a-mixin><!-- Recess right -->
-    <a-mixin id="recess_int_facing_E_left" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="2 3 1" rotation="0 0 0">
-    </a-mixin><!-- Recess left -->
-    <a-mixin id="recess_int_facing_E_back" geometry="primitive: plane;" material="src: #texture_recess_wall"
-             scale="10 3 1" rotation="0 90 0">
     </a-mixin><!-- Recess back -->
 
 
@@ -233,82 +173,82 @@
 
         <a-entity id="WallRight">
           <a-entity id="PA8">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_hall" position="3 2.5 -8.25">
+            <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 -90 0" position="3 2.5 -8.25">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_middle" position="3 4.5 -14">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 -14">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_middle" position="3 0.5 -14">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 0.5 -14">
             </a-entity>
 
-            <a-entity mixin="recess_int_facing_W_down" position="4 1 -14">
+            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 1 -14">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_up" position="4 4 -14">
+            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 -14">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_right" position="4 2.5 -9">
+            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="4 2.5 -9">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_left" position="4 2.5 -19">
+            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="4 2.5 -19">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_back" position="5 2.5 -14">
+            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -14">
             </a-entity>
           </a-entity>
 
           <a-entity id="Parking">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_inter" position="3 2.5 -20.25">
+            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 -90 0" position="3 2.5 -20.25">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_middle" position="3 4.5 -26.5">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 -26.5">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_middle" position="3 0.5 -26.5">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 0.5 -26.5">
             </a-entity>
 
-            <a-entity mixin="recess_int_facing_W_down" position="4 1 -26.5">
+            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 1 -26.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_up" position="4 4 -26.5">
+            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 -26.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_right" position="4 2.5 -21.5">
+            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="4 2.5 -21.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_left" position="4 2.5 -31.5">
+            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="4 2.5 -31.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_back" position="5 2.5 -26.5">
+            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -26.5">
             </a-entity>
           </a-entity>
 
           <a-entity id="RobotArticule">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_inter" position="3 2.5 -32.75">
+            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 -90 0" position="3 2.5 -32.75">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_middle" position="3 4.5 -39">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 -39">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_middle" position="3 0.5 -39">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 0.5 -39">
             </a-entity>
 
-            <a-entity mixin="recess_int_facing_W_down" position="4 1 -39">
+            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 1 -39">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_up" position="4 4 -39">
+            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 -39">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_right" position="4 2.5 -34">
+            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="4 2.5 -34">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_left" position="4 2.5 -44">
+            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="4 2.5 -44">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_back" position="5 2.5 -39">
+            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -39">
             </a-entity>
           </a-entity>
 
           <a-entity id="RayTracing">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_inter" position="3 2.5 -45.25">
+            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 -90 0" position="3 2.5 -45.25">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_middle" position="3 4.5 -51.5">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 -51.5">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_middle" position="3 0.5 -51.5">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 0.5 -51.5">
             </a-entity>
 
-            <a-entity mixin="recess_int_facing_W_down" position="4 1 -51.5">
+            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 1 -51.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_up" position="4 4 -51.5">
+            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 -51.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_right" position="4 2.5 -46.5">
+            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="4 2.5 -46.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_left" position="4 2.5 -56.5">
+            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="4 2.5 -56.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_back" position="5 2.5 -51.5">
+            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -51.5">
             </a-entity>
           </a-entity>
 
@@ -318,82 +258,82 @@
 
         <a-entity id="WallLeft">
           <a-entity id="Fusee">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_hall" position="-3 2.5 -8.25">
+            <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 90 0" position="-3 2.5 -8.25">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_middle" position="-3 4.5 -14">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" osition="-3 4.5 -14">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_middle" position="-3 0.5 -14">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 0.5 -14">
             </a-entity>
 
-            <a-entity mixin="recess_int_facing_E_down" position="-4 1 -14">
+            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 1 -14">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_up" position="-4 4 -14">
+            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -14">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_right" position="-4 2.5 -9">
+            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="-4 2.5 -9">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_left" position="-4 2.5 -19">
+            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="-4 2.5 -19">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_back" position="-5 2.5 -14">
+            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 -14">
             </a-entity>
           </a-entity>
 
           <a-entity id="ChattingApp">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_inter" position="-3 2.5 -20.25">
+            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -20.25">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_middle" position="-3 4.5 -26.5">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -26.5">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_middle" position="-3 0.5 -26.5">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 0.5 -26.5">
             </a-entity>
 
-            <a-entity mixin="recess_int_facing_E_down" position="-4 1 -26.5">
+            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 1 -26.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_up" position="-4 4 -26.5">
+            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -26.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_right" position="-4 2.5 -21.5">
+            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="-4 2.5 -21.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_left" position="-4 2.5 -31.5">
+            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="-4 2.5 -31.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_back" position="-5 2.5 -26.5">
+            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 -26.5">
             </a-entity>
           </a-entity>
 
           <a-entity id="Covid">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_inter" position="-3 2.5 -32.75">
+            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -32.75">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_middle" position="-3 4.5 -39">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -39">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_middle" position="-3 0.5 -39">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 0.5 -39">
             </a-entity>
 
-            <a-entity mixin="recess_int_facing_E_down" position="-4 1 -39">
+            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 1 -39">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_up" position="-4 4 -39">
+            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -39">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_right" position="-4 2.5 -34">
+            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="-4 2.5 -34">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_left" position="-4 2.5 -44">
+            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="-4 2.5 -44">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_back" position="-5 2.5 -39">
+            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 -39">
             </a-entity>
           </a-entity>
 
           <a-entity id="MachineDeep_Learning">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_inter" position="-3 2.5 -45.25">
+            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -45.25">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_middle" position="-3 4.5 -51.5">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -51.5">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_middle" position="-3 0.5 -51.5">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 0.5 -51.5">
             </a-entity>
 
-            <a-entity mixin="recess_int_facing_E_down" position="-4 1 -51.5">
+            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 1 -51.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_up" position="-4 4 -51.5">
+            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -51.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_right" position="-4 2.5 -46.5">
+            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="-4 2.5 -46.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_left" position="-4 2.5 -56.5">
+            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="-4 2.5 -56.5">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_back" position="-5 2.5 -51.5">
+            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 -51.5">
             </a-entity>
           </a-entity>
 
@@ -463,14 +403,11 @@
 
         <a-entity id="WallLeft">
           <a-entity id="NewsAdventure">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 0 0"
-                      position="8.25 2.5 -3">
+            <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 0 0" position="8.25 2.5 -3">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0"
-                      position="14 4.5 -3">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="14 4.5 -3">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0"
-                      position="14 0.5 -3">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="14 0.5 -3">
             </a-entity>
 
             <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 0" position="14 1 -4">
@@ -486,14 +423,11 @@
           </a-entity>
 
           <a-entity id="Psy">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0"
-                      position="20.25 2.5 -3">
+            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0" position="20.25 2.5 -3">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0"
-                      position="26.5 4.5 -3">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="26.5 4.5 -3">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0"
-                      position="26.5 0.5 -3">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="26.5 0.5 -3">
             </a-entity>
 
             <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 0" position="26.5 1 -4">
@@ -509,14 +443,11 @@
           </a-entity>
 
           <a-entity id="Graphs">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0"
-                      position="32.75 2.5 -3">
+            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0" position="32.75 2.5 -3">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0"
-                      position="39 4.5 -3">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="39 4.5 -3">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0"
-                      position="39 0.5 -3">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="39 0.5 -3">
             </a-entity>
 
             <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 0" position="39 1 -4">
@@ -532,14 +463,11 @@
           </a-entity>
 
           <a-entity id="Garage">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0"
-                      position="45.25 2.5 -3">
+            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0" position="45.25 2.5 -3">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0"
-                      position="51.5 4.5 -3">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="51.5 4.5 -3">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0"
-                      position="51.5 0.5 -3">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 0 0" position="51.5 0.5 -3">
             </a-entity>
 
             <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 0" position="51.5 1 -4">
@@ -585,22 +513,22 @@
 
         <a-entity id="WallRight">
           <a-entity id="ThisProject">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_hall" position="-3 2.5 8.25">
+            <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 90 0" position="-3 2.5 8.25">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_middle" position="-3 4.5 14">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 14">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_E_middle" position="-3 0.5 14">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 0.5 14">
             </a-entity>
 
-            <a-entity mixin="recess_int_facing_E_down" position="-4 1 14">
+            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 1 14">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_up" position="-4 4 14">
+            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 14">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_left" position="-4 2.5 9">
+            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="-4 2.5 9">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_right" position="-4 2.5 19">
+            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="-4 2.5 19">
             </a-entity>
-            <a-entity mixin="recess_int_facing_E_back" position="-5 2.5 14">
+            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 14">
             </a-entity>
           </a-entity>
 
@@ -610,22 +538,22 @@
 
         <a-entity id="WallLeft">
           <a-entity id="Dimension">
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_hall" position="3 2.5 8.25">
+            <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 -90 0" position="3 2.5 8.25">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_middle" position="3 4.5 14">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 14">
             </a-entity>
-            <a-entity material="src: #texture_wall" mixin="recess_ext_facing_W_middle" position="3 0.5 14">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 0.5 14">
             </a-entity>
 
-            <a-entity mixin="recess_int_facing_W_down" position="4 1 14">
+            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 1 14">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_up" position="4 4 14">
+            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 14">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_left" position="4 2.5 9">
+            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="4 2.5 9">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_right" position="4 2.5 19">
+            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="4 2.5 19">
             </a-entity>
-            <a-entity mixin="recess_int_facing_W_back" position="5 2.5 14">
+            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 14">
             </a-entity>
           </a-entity>
 
