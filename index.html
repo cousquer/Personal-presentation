@@ -69,7 +69,8 @@
     <!-- North -->
     <a-mixin id="hall_wall_N_M1L" height="5" width="5" position="5.25 2.5 -7.5" rotation="0 0 0">
     </a-mixin>
-    <a-mixin id="hall_wall_N_M1M2" height="5" width="5" position="-5.25 2.5 -7.5" rotation="0 0 0">
+    <a-mixin id="hall_wall_N_M1M2" height="5" width="5" position="-5.25 2.5 -7.5" rotation="0 0 0"
+             material="src: #texture_wall; repeat: 6 6">
     </a-mixin>
     <a-mixin id="hall_beam_N" height="5" width="5" position="0 5.5 -7.5" rotation="0 0 0">
     </a-mixin>
@@ -134,14 +135,11 @@
         facing North 
     -->
 
-    <a-mixin id="recess_ext_facing_N_hall" geometry="primitive: plane;" material="src: #texture_wall" scale="1.5 5 1"
-             rotation="0 180 0">
+    <a-mixin id="recess_ext_facing_N_hall" geometry="primitive: plane;" scale="1.5 5 1" rotation="0 180 0">
     </a-mixin><!-- Wall stuck to the hall -->
-    <a-mixin id="recess_ext_facing_N_inter" geometry="primitive: plane;" material="src: #texture_wall" scale="2.5 5 1"
-             rotation="0 180 0">
+    <a-mixin id="recess_ext_facing_N_inter" geometry="primitive: plane;" scale="2.5 5 1" rotation="0 180 0">
     </a-mixin><!-- Wall inter recess -->
-    <a-mixin id="recess_ext_facing_N_middle" geometry="primitive: plane;" material="src: #texture_wall" scale="10 1 1"
-             rotation="0 180 0">
+    <a-mixin id="recess_ext_facing_N_middle" geometry="primitive: plane;" scale="10 1 1" rotation="0 180 0">
     </a-mixin><!-- Wall middle -->
 
     <a-mixin id="recess_int_facing_N_down" geometry="primitive: plane;" material="src: #texture_recess_wall"
@@ -264,18 +262,16 @@
                   scale="3 3 1">
         </a-entity>
 
-        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ground; repeat: 4 4" mixin="hall_ground"
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ground; repeat: 3 4" mixin="hall_ground"
                   scale="15 15 1">
         </a-entity>
         <a-entity geometry="primitive: plane; " material="src: #texture_hall_ceiling; repeat: 6 6" mixin="hall_ceiling"
                   scale="17 17 1">
         </a-entity>
 
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_N_M1M2"
-                  scale="4.5 5 1">
+        <a-entity geometry="primitive: plane; " mixin="hall_wall_N_M1M2" scale="4.5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_N_M1L"
-                  scale="4.5 5 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_N_M1L" scale="4.5 5 1">
         </a-entity>
         <a-entity geometry="primitive: plane; " material="src: #texture_hall_beam; repeat: 10 1" mixin="hall_beam_N"
                   scale="15 1 1">
@@ -582,14 +578,11 @@
 
         <a-entity id="WallRight">
           <a-entity id="BwarioKart">
-            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_hall"
-                      position="8.25 2.5 3">
+            <a-entity geometry="primitive: plane; " mixin="recess_ext_facing_N_hall" position="8.25 2.5 3">
             </a-entity>
-            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_middle"
-                      position="14 4.5 3">
+            <a-entity geometry="primitive: plane; " mixin="recess_ext_facing_N_middle" position="14 4.5 3">
             </a-entity>
-            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_middle"
-                      position="14 0.5 3">
+            <a-entity geometry="primitive: plane; " mixin="recess_ext_facing_N_middle" position="14 0.5 3">
             </a-entity>
 
             <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
@@ -610,14 +603,11 @@
           </a-entity>
 
           <a-entity id="ObjectiveEquilibrium">
-            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_inter"
-                      position="20.25 2.5 3">
+            <a-entity geometry="primitive: plane; " mixin="recess_ext_facing_N_inter" position="20.25 2.5 3">
             </a-entity>
-            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_middle"
-                      position="26.5 4.5 3">
+            <a-entity geometry="primitive: plane; " mixin="recess_ext_facing_N_middle" position="26.5 4.5 3">
             </a-entity>
-            <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="recess_ext_facing_N_middle"
-                      position="26.5 0.5 3">
+            <a-entity geometry="primitive: plane; " mixin="recess_ext_facing_N_middle" position="26.5 0.5 3">
             </a-entity>
 
             <a-entity geometry="primitive: plane; " material="src: #texture_recess_wall"
