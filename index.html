@@ -67,10 +67,11 @@
     <a-mixin id="hall_ceiling" height="5" width="5" position="0 7 0" rotation="90 0 0">
     </a-mixin>
     <!-- North -->
-    <a-mixin id="hall_wall_N_M1L" height="5" width="5" position="5.25 2.5 -7.5" rotation="0 0 0">
+    <a-mixin id="hall_wall_N_M1L" height="5" width="5" position="5.25 2.5 -7.5" rotation="0 0 0"
+             material="src: #texture_wall;repeat: 3 3">
     </a-mixin>
     <a-mixin id="hall_wall_N_M1M2" height="5" width="5" position="-5.25 2.5 -7.5" rotation="0 0 0"
-             material="src: #texture_wall; repeat: 6 6">
+             material="src: #texture_wall; repeat: 3 3">
     </a-mixin>
     <a-mixin id="hall_beam_N" height="5" width="5" position="0 5.5 -7.5" rotation="0 0 0">
     </a-mixin>
@@ -135,11 +136,14 @@
         facing North 
     -->
 
-    <a-mixin id="recess_ext_facing_N_hall" geometry="primitive: plane;" scale="1.5 5 1" rotation="0 180 0">
+    <a-mixin id="recess_ext_facing_N_hall" geometry="primitive: plane;" scale="1.5 5 1" rotation="0 180 0"
+             material="src: #texture_recess_wall; repeat: 1 3">
     </a-mixin><!-- Wall stuck to the hall -->
-    <a-mixin id="recess_ext_facing_N_inter" geometry="primitive: plane;" scale="2.5 5 1" rotation="0 180 0">
+    <a-mixin id="recess_ext_facing_N_inter" geometry="primitive: plane;" scale="2.5 5 1" rotation="0 180 0"
+             material="src: #texture_recess_wall; repeat: 1 3">
     </a-mixin><!-- Wall inter recess -->
-    <a-mixin id="recess_ext_facing_N_middle" geometry="primitive: plane;" scale="10 1 1" rotation="0 180 0">
+    <a-mixin id="recess_ext_facing_N_middle" geometry="primitive: plane;" scale="10 1 1" rotation="0 180 0"
+             material="src: #texture_recess_wall; repeat: 5 1">
     </a-mixin><!-- Wall middle -->
 
     <a-mixin id="recess_int_facing_N_down" geometry="primitive: plane;" material="src: #texture_recess_wall"
@@ -271,7 +275,7 @@
 
         <a-entity geometry="primitive: plane; " mixin="hall_wall_N_M1M2" scale="4.5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall" mixin="hall_wall_N_M1L" scale="4.5 5 1">
+        <a-entity geometry="primitive: plane; " mixin="hall_wall_N_M1L" scale="4.5 5 1">
         </a-entity>
         <a-entity geometry="primitive: plane; " material="src: #texture_hall_beam; repeat: 10 1" mixin="hall_beam_N"
                   scale="15 1 1">
