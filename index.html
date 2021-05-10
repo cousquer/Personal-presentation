@@ -168,8 +168,6 @@
         </a-entity>>
         <a-entity mixin="corridor_ceiling" scale="6 51 1" position="0 5 -33" rotation="90 0 0">
         </a-entity>
-        <a-plane src="#texture_wall" height="5" width="6" rotation="0 0 0" repeat="1 1" position="0 2.5 -58.5">
-        </a-plane><!-- End corridor -->
 
         <a-entity id="WallRight">
           <a-entity id="PA8">
@@ -251,16 +249,13 @@
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -51.5">
             </a-entity>
           </a-entity>
-
-          <a-plane src="#texture_wall" height="5" width="2" rotation="0 -90 0" repeat="1 1" position="3 2.5 -57.5">
-          </a-plane>
         </a-entity>
 
         <a-entity id="WallLeft">
           <a-entity id="Fusee">
             <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 90 0" position="-3 2.5 -8.25">
             </a-entity>
-            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" osition="-3 4.5 -14">
+            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -14">
             </a-entity>
             <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 0.5 -14">
             </a-entity>
@@ -336,9 +331,15 @@
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 -51.5">
             </a-entity>
           </a-entity>
+        </a-entity>
 
-          <a-plane src="#texture_wall" height="5" width="2" rotation="0 90 0" repeat="1 1" position="-3 2.5 -57.5">
+        <a-entity id="EndCorridor">
+          <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -57.5">
+          </a-entity>
+          <a-plane src="#texture_wall" height="5" width="6" rotation="0 0 0" repeat="2 2" position="0 2.5 -58.5">
           </a-plane>
+          <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 -90 0" position="3 2.5 -57.5">
+          </a-entity>
         </a-entity>
       </a-entity>
 
@@ -349,8 +350,6 @@
         </a-entity>
         <a-entity mixin="corridor_ceiling" scale="51 6 1" position="33 5 0" rotation="90 0 0">
         </a-entity>
-        <a-plane src="#texture_wall" height="5" width="6" rotation="0 -90 0" repeat="1 1" position="58.5 2.5 0">
-        </a-plane><!-- End corridor -->
 
         <a-entity id="WallRight">
           <a-entity id="BwarioKart">
@@ -393,9 +392,6 @@
             </a-entity>
           </a-entity>
 
-
-          <a-plane src="#texture_wall" height="5" width="2" rotation="0 180 0" repeat="1 1" position="57.5 2.5 3">
-          </a-plane>
           <!-- Fill blank space -->
           <a-plane src="#texture_wall" height="5" width="25" rotation="0 180 0" repeat="1 1" position="44 2.5 3">
           </a-plane>
@@ -481,24 +477,34 @@
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 0 0" position="51.5 2.5 -5">
             </a-entity>
           </a-entity>
+        </a-entity>
 
-          <a-plane src="#texture_wall" height="5" width="2" rotation="0 0 0" repeat="1 1" position="57.5 2.5 -3">
+
+        <a-entity id=" EndCorridor">
+          <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 180 0" position="57.5 2.5 3">
+          </a-entity>
+          <a-plane src="#texture_wall" height="5" width="6" rotation="0 -90 0" repeat="2 2" position="58.5 2.5 0">
           </a-plane>
+          <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0" position="57.5 2.5 -3">
+          </a-entity>
         </a-entity>
       </a-entity>
 
       <!-- West part - M2 -->
 
-      <a-entity id="West">
+      <a-entity id=" West">
         <a-entity mixin="corridor_ground" scale="51 6 1" position="-33 0 0" rotation="-90 0 0">
         </a-entity>
         <a-entity mixin="corridor_ceiling" scale="51 6 1" position="-33 5 0" rotation="90 0 0">
         </a-entity>
-        <a-plane src="#texture_wall" height="5" width="6" rotation="0 90 0" repeat="1 1" position="-15 2.5 0">
-        </a-plane><!-- End corridor -->
 
         <a-plane src="#texture_wip" height="5" width="6" rotation="0 90 0" repeat="1 1" position="-7.5 2.5 0">
         </a-plane>
+
+        <a-entity id=" EndCorridor">
+          <a-plane src="#texture_wall" height="5" width="6" rotation="0 90 0" repeat="1 1" position="-15 2.5 0">
+          </a-plane>
+        </a-entity>
       </a-entity>
 
       <!-- South part - Other projects -->
@@ -508,8 +514,6 @@
         </a-entity>
         <a-entity mixin="corridor_ceiling" scale="6 51 1" position="0 5 33" rotation="90 0 0">
         </a-entity>
-        <a-plane src="#texture_wall" height="5" width="6" rotation="0 180 0" repeat="1 1" position="0 2.5 21">
-        </a-plane><!-- End corridor -->
 
         <a-entity id="WallRight">
           <a-entity id="ThisProject">
@@ -531,9 +535,6 @@
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 14">
             </a-entity>
           </a-entity>
-
-          <a-plane src="#texture_wall" height="5" width="2" rotation="0 90 0" repeat="1 1" position="-3 2.5 20">
-          </a-plane>
         </a-entity>
 
         <a-entity id="WallLeft">
@@ -556,11 +557,16 @@
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 14">
             </a-entity>
           </a-entity>
-
-          <a-plane src="#texture_wall" height="5" width="2" rotation="0 -90 0" repeat="1 1" position="3 2.5 20">
-          </a-plane>
         </a-entity>
 
+        <a-entity id=" EndCorridor">
+          <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 20">
+          </a-entity>
+          <a-plane src="#texture_wall" height="5" width="6" rotation="0 180 0" repeat="1 1" position="0 2.5 21">
+          </a-plane>
+          <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 -90 0" position="3 2.5 20">
+          </a-entity>
+        </a-entity>
       </a-entity>
     </a-entity>
   </a-scene>
