@@ -81,9 +81,11 @@
              material="src: #texture_hall_hidden; repeat: 1 10">
     </a-mixin>
     <!-- East -->
-    <a-mixin id="hall_wall_E_LE" geometry="primitive: plane; repeat: 1 1" position="7.5 2.5 5.25" rotation="0 -90 0">
+    <a-mixin id="hall_wall_E_LE" geometry="primitive: plane;" position="7.5 2.5 5.25" rotation="0 -90 0"
+             material="src: #texture_wall; repeat: 1 1">
     </a-mixin>
-    <a-mixin id="hall_wall_E_LM1" geometry="primitive: plane; repeat: 1 1" position="7.5 2.5 -5.25" rotation="0 -90 0">
+    <a-mixin id="hall_wall_E_LM1" geometry="primitive: plane;" position="7.5 2.5 -5.25" rotation="0 -90 0"
+             material="src: #texture_wall; repeat: 1 1">
     </a-mixin>
     <a-mixin id="hall_beam_E" geometry="primitive: plane;" position="7.5 5.5 0" rotation="0 -90 0"
              material="src: #texture_hall_beam; repeat: 10 1">
@@ -92,9 +94,11 @@
              material="src: #texture_hall_hidden; repeat: 1 10">
     </a-mixin>
     <!-- West -->
-    <a-mixin id="hall_wall_W_M2E" geometry="primitive: plane; repeat: 3 3" position="-7.5 2.5 5.25" rotation="0 90 0">
+    <a-mixin id="hall_wall_W_M2E" geometry="primitive: plane;" position="-7.5 2.5 5.25" rotation="0 90 0"
+             material="src: #texture_wall; repeat: 3 3">
     </a-mixin>
-    <a-mixin id="hall_wall_W_M2M1" geometry="primitive: plane;repeat: 3 3" position="-7.5 2.5 -5.25" rotation="0 90 0">
+    <a-mixin id="hall_wall_W_M2M1" geometry="primitive: plane;" position="-7.5 2.5 -5.25" rotation="0 90 0"
+             material="src: #texture_wall; repeat: 3 3">
     </a-mixin>
     <a-mixin id="hall_beam_W" geometry="primitive: plane;" position="-7.5 5.5 0" rotation="0 90 0"
              material="src: #texture_hall_beam; repeat: 10 1">
@@ -103,9 +107,11 @@
              material="src: #texture_hall_hidden; repeat: 1 10">
     </a-mixin>
     <!-- South -->
-    <a-mixin id="hall_wall_S_EL" geometry="primitive: plane; repeat: 4 4 " position="5.25 2.5 7.5" rotation="0 180 0">
+    <a-mixin id="hall_wall_S_EL" geometry="primitive: plane;" position="5.25 2.5 7.5" rotation="0 180 0"
+             material="src: #texture_wall; repeat: 4 4">
     </a-mixin>
-    <a-mixin id="hall_wall_S_EM2" geometry="primitive: plane; repeat: 4 4" position="-5.25 2.5 7.5" rotation="0 180 0">
+    <a-mixin id="hall_wall_S_EM2" geometry="primitive: plane;" position="-5.25 2.5 7.5" rotation="0 180 0"
+             material="src: #texture_wall; repeat: 4 4">
     </a-mixin>
     <a-mixin id="hall_beam_S" geometry="primitive: plane;" position="0 5.5 7.5" rotation="0 180 0"
              material="src: #texture_hall_beam; repeat: 10 1">
@@ -284,25 +290,25 @@
         </a-entity>
         <a-entity mixin="hall_hidden_N" scale="17 2 1">
         </a-entity>
-        <a-entity material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_E_LM1" scale="4.5 5 1">
+        <a-entity mixin="hall_wall_E_LM1" scale="4.5 5 1">
         </a-entity>
-        <a-entity material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_E_LE" scale="4.5 5 1">
+        <a-entity mixin="hall_wall_E_LE" scale="4.5 5 1">
         </a-entity>
         <a-entity mixin="hall_beam_E" scale="15 1 1">
         </a-entity>
         <a-entity mixin="hall_hidden_E" scale="17 2 1">
         </a-entity>
-        <a-entity material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_W_M2E" scale="4.5 5 1">
+        <a-entity mixin="hall_wall_W_M2E" scale="4.5 5 1">
         </a-entity>
-        <a-entity material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_W_M2M1" scale="4.5 5 1">
+        <a-entity mixin="hall_wall_W_M2M1" scale="4.5 5 1">
         </a-entity>
         <a-entity mixin="hall_beam_W" scale="15 1 1">
         </a-entity>
         <a-entity mixin="hall_hidden_W" scale="17 2 1">
         </a-entity>
-        <a-entity material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_S_EL" scale="4.5 5 1">
+        <a-entity mixin="hall_wall_S_EL" scale="4.5 5 1">
         </a-entity>
-        <a-entity material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_S_EM2" scale="4.5 5 1">
+        <a-entity mixin="hall_wall_S_EM2" scale="4.5 5 1">
         </a-entity>
         <a-entity mixin="hall_beam_S" scale="15 1 1">
         </a-entity>
