@@ -9,20 +9,22 @@
   <script src="scripts/aframe-v1.2.0.min.js"></script>
   <script src="scripts/highlight.js"></script> <!--  for the UI -->
 
+  <!-- some texture on https://www.swtexture.com/ -->
 </head>
 
 <body>
   <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable">
     <a-assets>
 
-      <img id="texture_sea" src="assets/img/sea.jpg" />
       <img id="texture_sky" src="assets/img/sky.jpg" />
       <img id="texture_wall" src="assets/img/wall.jpg" />
       <img id="texture_wip" src="assets/img/wip.png" />
-      <img id="texture_chisel" src="assets/img/marbre.jpg" />
 
+      <img id="texture_spawn_ground" src="assets/img/spawn.jpg" />
       <img id="texture_hall_ground" src="assets/img/hall-ground.jpg" />
+      <img id="texture_hall_beam" src="assets/img/hall-beam.jpg" />
       <img id="texture_hall_ceiling" src="assets/img/hall-ceiling.jpg" />
+      <img id="texture_hall_hidden" src="assets/img/hall-hidden.jpg" />
       <img id="texture_recess_wall" src="assets/img/recess-wall.jpg" />
       <img id="texture_corridor_ground" src="assets/img/corridor-ground.jpg" />
 
@@ -54,7 +56,7 @@
 
     <!--   ---------     Spawn assets     ----------   -->
 
-    <a-mixin id="model_ground_spawn" src="#unknown" height="10" width="10" rotation="-90 0 0">
+    <a-mixin id="model_ground_spawn" src="#texture_spawn_ground" height="10" width="10" rotation="-90 0 0">
     </a-mixin>
 
 
@@ -262,52 +264,60 @@
                   scale="3 3 1">
         </a-entity>
 
-        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ground" mixin="hall_ground"
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ground; repeat: 2 3" mixin="hall_ground"
                   scale="15 15 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ceiling" mixin="hall_ceiling"
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_ceiling; repeat: 6 6" mixin="hall_ceiling"
                   scale="17 17 1">
         </a-entity>
 
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 3" mixin="hall_wall_N_M1M2"
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_N_M1M2"
                   scale="4.5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 3" mixin="hall_wall_N_M1L"
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_N_M1L"
                   scale="4.5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_chisel" mixin="hall_beam_N" scale="15 1 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_beam; repeat: 1 10" mixin="hall_beam_N"
+                  scale="15 1 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_sea" mixin="hall_hidden_N" scale="17 2 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_hidden; repeat: 1 10" mixin="hall_hidden_N"
+                  scale="17 2 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 3" mixin="hall_wall_E_LM1"
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_E_LM1"
                   scale="4.5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 3" mixin="hall_wall_E_LE"
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_E_LE"
                   scale="4.5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_chisel" mixin="hall_beam_E" scale="15 1 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_beam; repeat: 1 10" mixin="hall_beam_E"
+                  scale="15 1 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_sea" mixin="hall_hidden_E" scale="17 2 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_hidden; repeat: 1 10" mixin="hall_hidden_E"
+                  scale="17 2 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 3" mixin="hall_wall_W_M2E"
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_W_M2E"
                   scale="4.5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 3" mixin="hall_wall_W_M2M1"
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_W_M2M1"
                   scale="4.5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_chisel" mixin="hall_beam_W" scale="15 1 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_beam; repeat: 1 10" mixin="hall_beam_W"
+                  scale="15 1 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_sea" mixin="hall_hidden_W" scale="17 2 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_hidden; repeat: 1 10" mixin="hall_hidden_W"
+                  scale="17 2 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 3" mixin="hall_wall_S_EL"
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_S_EL"
                   scale="4.5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 3" mixin="hall_wall_S_EM2"
+        <a-entity geometry="primitive: plane; " material="src: #texture_wall; repeat: 2 2" mixin="hall_wall_S_EM2"
                   scale="4.5 5 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_chisel" mixin="hall_beam_S" scale="15 1 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_beam; repeat: 1 10" mixin="hall_beam_S"
+                  scale="15 1 1">
         </a-entity>
-        <a-entity geometry="primitive: plane; " material="src: #texture_sea" mixin="hall_hidden_S" scale="17 2 1">
+        <a-entity geometry="primitive: plane; " material="src: #texture_hall_hidden; repeat: 1 10" mixin="hall_hidden_S"
+                  scale="17 2 1">
         </a-entity>
       </a-entity>
 
