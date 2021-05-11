@@ -62,8 +62,7 @@
 
     <!--     Spawn assets      -->
 
-    <a-mixin id="ground_spawn" src="#texture_spawn_ground" repeat="20 20" position="0 -0.005 0" rotation="-90 0 0"
-             scale="75 1 75">
+    <a-mixin id="ground_spawn" geometry="primitive: plane;" material="src=#texture_spawn_ground; repeat=20 20">
     </a-mixin>
 
 
@@ -124,7 +123,7 @@
       <!-- Hall / Spawn -->
 
       <a-entity id="Hall">
-        <a-entity mixin="ground_spawn" position="0 0.005 0" rotation="-90 0 0" scale="3 3 1">
+        <a-entity mixin="ground_spawn" scale="75 75 1" position="0 -0.005 0" rotation="-90 0 0">
         </a-entity>
 
         <a-entity mixin="hall_ground" scale="15 15 1" position="0 0 0" rotation="-90 0 0">
