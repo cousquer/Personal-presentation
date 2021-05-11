@@ -59,9 +59,6 @@
               rotation="0 180 0" scale="5 5 5">
     </a-entity>
 
-    <a-mixin id="wall_lamp" gltf-model="#lamp" scale="0.8 0.8 0.8">
-    </a-mixin>
-
     <!--     Spawn assets      -->
 
     <a-mixin id="ground_spawn" src="#texture_spawn_ground" rotation="-90 0 0">
@@ -79,6 +76,9 @@
     <a-mixin id="hall_beam" geometry="primitive: plane;" material="src: #texture_hall_beam; repeat: 8 1">
     </a-mixin>
     <a-mixin id="hall_hidden" geometry="primitive: plane;" material="src: #texture_hall_hidden; repeat: 10 1">
+    </a-mixin>
+
+    <a-mixin id="hall_light" light="type: spot; color: #e8a9f5; intensity: 1; angle: 90; castShadow: false">
     </a-mixin>
 
 
@@ -110,6 +110,12 @@
     </a-mixin>
 
 
+    <a-mixin id="wall_lamp" gltf-model="#lamp" scale="0.8 0.8 0.8">
+    </a-mixin>
+    <a-mixin id="wall_light" light="type: spot; color: #FFF; intensity: 1; castShadow:true; angle: 15; distance: 4">
+    </a-mixin>
+
+
     <!--    Scene    -->
 
 
@@ -125,6 +131,8 @@
         </a-entity>
         <a-entity mixin="hall_ceiling" scale="17 17 1" position="0 7 0" rotation="90 0 0">
         </a-entity>
+        <a-entity light="type: ambient; intensity: 0.2" position="0 3 0">
+        </a-entity>
 
         <a-entity id="North">
           <a-entity mixin="hall_wall" scale="4.5 5 1" position="-5.25 2.5 -7.5" rotation="0 0 0">
@@ -136,6 +144,8 @@
           <a-entity mixin="hall_beam" scale="15 1 1" position="0 5 -8" rotation="90 0 0">
           </a-entity>
           <a-entity mixin="hall_hidden" scale="17 2 1" position="0 6 -8.5" rotation="0 0 0">
+          </a-entity>
+          <a-entity mixin="hall_light" position="0 6 -8" rotation="90 0 0">
           </a-entity>
         </a-entity>
         <a-entity id="East">
@@ -149,6 +159,8 @@
           </a-entity>
           <a-entity mixin="hall_hidden" scale="17 2 1" position="8.5 6 0" rotation="0 -90 0">
           </a-entity>
+          <a-entity mixin="hall_light" position="8 6 0" rotation="90 0 0">
+          </a-entity>
         </a-entity>
         <a-entity id="West">
           <a-entity mixin="hall_wall" scale="4.5 5 1" position="-7.5 2.5 5.25" rotation="0 90 0">
@@ -161,6 +173,8 @@
           </a-entity>
           <a-entity mixin="hall_hidden" scale="17 2 1" position="-8.5 6 0" rotation="0 90 0">
           </a-entity>
+          <a-entity mixin="hall_light" position="-8 6 0" rotation="90 0 0">
+          </a-entity>
         </a-entity>
         <a-entity id="South">
           <a-entity mixin="hall_wall" scale="4.5 5 1" position="5.25 2.5 7.5" rotation="0 180 0">
@@ -172,6 +186,8 @@
           <a-entity mixin="hall_beam" scale="15 1 1" position="0 5 8" rotation="90 180 0">
           </a-entity>
           <a-entity mixin="hall_hidden" scale="17 2 1" position="0 6 8.5" rotation="0 180 0">
+          </a-entity>
+          <a-entity mixin="hall_light" position="0 6 8" rotation="90 0 0">
           </a-entity>
         </a-entity>
       </a-entity>
@@ -204,14 +220,13 @@
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -14">
             </a-entity>
 
-            <a-entity mixin="wall_lamp" position="4 2.5 -18.75" shadow="receive:true" rotation="0 90 0">
+            <a-entity mixin="wall_lamp" position="4 3 -18.75" shadow="receive:true" rotation="0 90 0">
             </a-entity>
-            <a-entity light="type: spot; color: #FFF; intensity: 1; castShadow:true; angle: 15; distance: 4"
-                      position="4 2.7 -18.75" rotation="-90 0 0">
+            <a-entity mixin="wall_light" position="4 4 -18.75" rotation="-90 0 0">
             </a-entity>
-            <a-entity mixin="wall_lamp" position="4 2.5 -9.25" rotation="0 -90 0">
+            <a-entity mixin="wall_lamp" position="4 3 -9.25" rotation="0 -90 0">
             </a-entity>
-            <a-entity light="type: point; color: #FFF; intensity: 0.1" position="0 6 -8">
+            <a-entity mixin="wall_light" position="4 4 -18.75" rotation="-90 0 0">
             </a-entity>
           </a-entity>
 
