@@ -1,106 +1,62 @@
 {
   "accessors": [
     {
-      "bufferView": 2,
+      "bufferView": 1,
       "componentType": 5126,
-      "count": 229,
+      "count": 148,
       "max": [
-        1.0013580322265625e-05,
-        40.640972137451172,
-        -9.3089050778871751e-07
+        0.5,
+        0.5,
+        0.49312898516654968
       ],
       "min": [
-        -24.386917114257812,
-        -40.640972137451172,
-        -41.860725402832031
+        -0.42928019165992737,
+        -0.5,
+        -0.49312895536422729
       ],
       "type": "VEC3"
     },
     {
-      "bufferView": 2,
-      "byteOffset": 2748,
+      "bufferView": 1,
+      "byteOffset": 1776,
       "componentType": 5126,
-      "count": 229,
+      "count": 148,
       "max": [
-        0.88502448797225952,
-        0.97902196645736694,
-        1
-      ],
-      "min": [
-        -0.98493921756744385,
-        -0.97902196645736694,
-        -0.99876797199249268
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 3,
-      "componentType": 5126,
-      "count": 229,
-      "max": [
-        0.9735608696937561,
-        0.99233895540237427,
-        0.99826228618621826,
+        1,
+        1,
         1
       ],
       "min": [
         -1,
-        -0.94410973787307739,
-        -0.99787276983261108,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 148,
+      "max": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1.8578820970560628e-07,
+        -1,
+        -1,
         1
       ],
       "type": "VEC4"
     },
     {
-      "bufferView": 1,
-      "componentType": 5126,
-      "count": 229,
-      "max": [
-        0.99696379899978638,
-        0.99486750364303589
-      ],
-      "min": [
-        0.020351555198431015,
-        0.0061773089691996574
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 1832,
-      "componentType": 5126,
-      "count": 229,
-      "max": [
-        0.99696379899978638,
-        0.99486750364303589
-      ],
-      "min": [
-        0.020351555198431015,
-        0.0061773089691996574
-      ],
-      "type": "VEC2"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 3664,
-      "componentType": 5126,
-      "count": 229,
-      "max": [
-        0.99696379899978638,
-        0.99486750364303589
-      ],
-      "min": [
-        0.020351555198431015,
-        0.0061773089691996574
-      ],
-      "type": "VEC2"
-    },
-    {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 465,
+      "count": 288,
       "max": [
-        228
+        147
       ],
       "min": [
         0
@@ -110,42 +66,34 @@
   ],
   "asset": {
     "extras": {
-      "author": "luisgomezmoreno (https://sketchfab.com/luisgomezmoreno)",
-      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/3d-models/sun-themed-lamp-19b1dabd85334419aeba538f8f2d7fad",
-      "title": "Sun-themed lamp"
+      "author": "grimren13 (https://sketchfab.com/grimren13)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/models/d7063ec962e5411d82e7d5446e45de97",
+      "title": "Wall Lamp"
     },
-    "generator": "Sketchfab-6.49.1",
+    "generator": "Sketchfab-3.18.7",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 1860,
+      "byteLength": 1152,
       "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 5496,
-      "byteOffset": 1860,
-      "byteStride": 8,
-      "name": "floatBufferViews",
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 5496,
-      "byteOffset": 7356,
+      "byteLength": 3552,
+      "byteOffset": 1152,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 3664,
-      "byteOffset": 12852,
+      "byteLength": 2368,
+      "byteOffset": 4704,
       "byteStride": 16,
       "name": "floatBufferViews",
       "target": 34962
@@ -153,76 +101,42 @@
   ],
   "buffers": [
     {
-      "byteLength": 16516,
+      "byteLength": 7072,
       "uri": "scene.bin"
-    }
-  ],
-  "images": [
-    {
-      "uri": "textures/07_-_Default_baseColor.png"
-    },
-    {
-      "uri": "textures/07_-_Default_metallicRoughness.png"
-    },
-    {
-      "uri": "textures/07_-_Default_emissive.png"
-    },
-    {
-      "uri": "textures/07_-_Default_normal.png"
     }
   ],
   "materials": [
     {
-      "doubleSided": false,
+      "doubleSided": true,
       "emissiveFactor": [
-        1,
-        1,
-        1
+        0,
+        0,
+        0
       ],
-      "emissiveTexture": {
-        "index": 2,
-        "texCoord": 0
-      },
-      "name": "07_-_Default",
-      "normalTexture": {
-        "index": 3,
-        "scale": 1,
-        "texCoord": 0
-      },
+      "name": "lambert1",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          1,
-          1,
-          1,
+          0.5,
+          0.5,
+          0.5,
           1
         ],
-        "baseColorTexture": {
-          "index": 0,
-          "texCoord": 0
-        },
-        "metallicFactor": 1,
-        "metallicRoughnessTexture": {
-          "index": 1,
-          "texCoord": 0
-        },
-        "roughnessFactor": 0.71999999999999997
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
       }
     }
   ],
   "meshes": [
     {
-      "name": "Lampara_07 - Default_0",
+      "name": "pCube3_lambert1_0",
       "primitives": [
         {
           "attributes": {
             "NORMAL": 1,
             "POSITION": 0,
-            "TANGENT": 2,
-            "TEXCOORD_0": 3,
-            "TEXCOORD_1": 4,
-            "TEXCOORD_2": 5
+            "TANGENT": 2
           },
-          "indices": 6,
+          "indices": 3,
           "material": 0,
           "mode": 4
         }
@@ -270,7 +184,7 @@
         0,
         1
       ],
-      "name": "fe892c9ea5424880b7ffbfb35ea92add.fbx"
+      "name": "37dd68c2572b40f3b5e09a485cbeef64.fbx"
     },
     {
       "children": [
@@ -282,37 +196,11 @@
       "children": [
         5
       ],
-      "matrix": [
-        1.1102692317087399e-07,
-        -1.4099832200981251e-16,
-        -2.5399999618530256,
-        0,
-        -2.5399999618530256,
-        0,
-        -1.1102692359386895e-07,
-        0,
-        1.4099832200981251e-16,
-        2.5399999618530278,
-        -5.6399328803925005e-16,
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      "name": "Lampara"
+      "name": "pCube3"
     },
     {
       "mesh": 0,
-      "name": "Lampara_07 - Default_0"
-    }
-  ],
-  "samplers": [
-    {
-      "magFilter": 9729,
-      "minFilter": 9987,
-      "wrapS": 10497,
-      "wrapT": 10497
+      "name": "pCube3_lambert1_0"
     }
   ],
   "scene": 0,
@@ -322,24 +210,6 @@
       "nodes": [
         0
       ]
-    }
-  ],
-  "textures": [
-    {
-      "sampler": 0,
-      "source": 0
-    },
-    {
-      "sampler": 0,
-      "source": 1
-    },
-    {
-      "sampler": 0,
-      "source": 2
-    },
-    {
-      "sampler": 0,
-      "source": 3
     }
   ]
 }
