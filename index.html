@@ -18,7 +18,7 @@
 
       <img id="texture_sky" src="assets/img/sky.jpg" />
       <img id="texture_wall" src="assets/img/wall.jpg" />
-      <img id="texture_wip" src="assets/img/wip.png" />
+      <img id="texture_wip" src="assets/img/wip.jpg" />
 
       <img id="texture_spawn_ground" src="assets/img/spawn.jpg" />
       <img id="texture_hall_ground" src="assets/img/hall-ground.jpg" />
@@ -127,7 +127,7 @@
           </a-entity>
           <a-entity mixin="hall_beam" scale="15 1 1" position="0 5.5 -7.5" rotation="0 0 0">
           </a-entity>
-          <a-entity mixin="hall_beam" scale="15 1 1" position="0 5 -8" rotation="-90 0 0">
+          <a-entity mixin="hall_beam" scale="15 1 1" position="0 5 -8" rotation="90 0 0">
           </a-entity>
           <a-entity mixin="hall_hidden" scale="17 2 1" position="0 6 -8.5" rotation="0 0 0">
           </a-entity>
@@ -139,7 +139,7 @@
           </a-entity>
           <a-entity mixin="hall_beam" scale="15 1 1" position="7.5 5.5 0" rotation="0 -90 0">
           </a-entity>
-          <a-entity mixin="hall_beam" scale="15 1 1" position="8 5 0" rotation="-90 0 90">
+          <a-entity mixin="hall_beam" scale="15 1 1" position="8 5 0" rotation="90 0 90">
           </a-entity>
           <a-entity mixin="hall_hidden" scale="17 2 1" position="8.5 6 0" rotation="0 -90 0">
           </a-entity>
@@ -151,7 +151,7 @@
           </a-entity>
           <a-entity mixin="hall_beam" scale="15 1 1" position="-7.5 5.5 0" rotation="0 90 0">
           </a-entity>
-          <a-entity mixin="hall_beam" scale="15 1 1" position="-8 5 0" rotation="-90 180 90">
+          <a-entity mixin="hall_beam" scale="15 1 1" position="-8 5 0" rotation="90 180 90">
           </a-entity>
           <a-entity mixin="hall_hidden" scale="17 2 1" position="-8.5 6 0" rotation="0 90 0">
           </a-entity>
@@ -163,7 +163,7 @@
           </a-entity>
           <a-entity mixin="hall_beam" scale="15 1 1" position="0 5.5 7.5" rotation="0 180 0">
           </a-entity>
-          <a-entity mixin="hall_beam" scale="15 1 1" position="0 5 8" rotation="-90 180 0">
+          <a-entity mixin="hall_beam" scale="15 1 1" position="0 5 8" rotation="90 180 0">
           </a-entity>
           <a-entity mixin="hall_hidden" scale="17 2 1" position="0 6 8.5" rotation="0 180 0">
           </a-entity>
@@ -175,7 +175,7 @@
       <a-entity id="North">
         <a-entity mixin="corridor_ground" scale="6 51.5 1" position="0 0 -33.25" rotation="-90 0 0">
         </a-entity>>
-        <a-entity mixin="corridor_ceiling" scale="6 51 1" position="0 5 -33.5" rotation="90 0 0">
+        <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="0 5 -33.75" rotation="90 0 0">
         </a-entity>
 
         <a-entity id="WallRight">
@@ -358,7 +358,7 @@
       <a-entity id="East">
         <a-entity mixin="corridor_ground" scale="6 51.5 1" position="33.25 0 0" rotation="-90 90 0">
         </a-entity>
-        <a-entity mixin="corridor_ceiling" scale="6 51 1" position="33.5 5 0" rotation="90 90 0">
+        <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="33.75 5 0" rotation="90 90 0">
         </a-entity>
 
         <a-entity id="WallRight">
@@ -505,7 +505,7 @@
       <a-entity id=" West">
         <a-entity mixin="corridor_ground" scale="6 51.5 1" position="-33.25 0 0" rotation="-90 90 0">
         </a-entity>
-        <a-entity mixin="corridor_ceiling" scale="6 51 1" position="-33.5 5 0" rotation="90 90 0">
+        <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="-33.75 5 0" rotation="90 90 0">
         </a-entity>
 
         <a-plane src="#texture_wip" height="5" width="6" rotation="0 90 0" repeat="1 1" position="-7.5 2.5 0">
@@ -522,7 +522,7 @@
       <a-entity id="South">
         <a-entity mixin="corridor_ground" scale="6 51.5 1" position="0 0 33.25" rotation="-90 0 0">
         </a-entity>
-        <a-entity mixin="corridor_ceiling" scale="6 51 1" position="0 5 33.5" rotation="90 0 0">
+        <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="0 5 33.75" rotation="90 0 0">
         </a-entity>
 
         <a-entity id="WallRight">
