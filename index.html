@@ -32,11 +32,8 @@
 
       <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
-      <!--
-      <a-asset-item id="candlestick" src="assets/obj/chandelier.glb" res ponse-type="arraybuffer"
-                    crossorigin="anonymous">
+      <a-asset-item id="lamp" src="assets/obj/lamp.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
-    -->
     </a-assets>
 
 
@@ -84,7 +81,7 @@
 
     <a-mixin id="corridor_ground" geometry="primitive: plane;" material="src: #texture_corridor_ground; repeat: 2 10">
     </a-mixin>
-    <a-mixin id="corridor_ceiling" geometry="primitive: plane;" material="src: #texture_hall_ceiling; repeat: 3 20">
+    <a-mixin id="corridor_ceiling" geometry="primitive: plane;" material="src: #texture_hall_ceiling; repeat: 3 23">
     </a-mixin>
 
 
@@ -123,10 +120,6 @@
         </a-entity>
         <a-entity mixin="hall_ceiling" scale="17 17 1" position="0 7 0" rotation="90 0 0">
         </a-entity>
-        <!--
-        <a-entity gltf-model="#candlestick" scale="1 1 1" position="0 7 0" rotation="0 0 0">
-        </a-entity>-->
-
 
         <a-entity id="North">
           <a-entity mixin="hall_wall" scale="4.5 5 1" position="-5.25 2.5 -7.5" rotation="0 0 0">
@@ -204,6 +197,9 @@
             <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="4 2.5 -19">
             </a-entity>
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -14">
+            </a-entity>
+
+            <a-entity gltf-model="#lamp" scale="1 1 1" position="4 2.5 -19" rotation="0 0 0">
             </a-entity>
           </a-entity>
 
