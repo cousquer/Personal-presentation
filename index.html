@@ -112,10 +112,8 @@
 
     <!--
     <a-mixin id="wall_lamp" gltf-model="#lamp" scale="0.8 0.8 0.8">
-    </a-mixin>
-    <a-mixin id="wall_light" light="type: spot; color: #FFF; intensity: 1; castShadow: false; angle: 15; distance: 4">
-    </a-mixin>
--->
+    </a-mixin>  
+    -->
 
     <!--    Scene    -->
 
@@ -132,7 +130,7 @@
         </a-entity>
         <a-entity mixin="hall_ceiling" scale="17 17 1" position="0 7 0" rotation="90 0 0">
         </a-entity>
-        <a-entity light="type: ambient; intensity: 0.650; color:#b5c0c0" position="0 3 0">
+        <a-entity light="type: ambient; intensity: 0.650; color:#b5c0c0; castShadow: false" position="0 3 0">
         </a-entity>
 
         <a-entity id="North">
@@ -146,7 +144,8 @@
           </a-entity>
           <a-entity mixin="hall_hidden" scale="17 2 1" position="0 6 -8.5" rotation="0 0 0">
           </a-entity>
-          <a-entity mixin="hall_light" position="0 6 -8" rotation="90 0 0">
+          <a-entity light="type: spot; color: #faff1a; intensity: 1; angle: 90; castShadow: false" position="0 6 -8"
+                    rotation="90 0 0">
           </a-entity>
         </a-entity>
         <a-entity id="East">
