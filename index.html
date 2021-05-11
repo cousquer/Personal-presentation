@@ -79,7 +79,7 @@
     <a-mixin id="hall_hidden" geometry="primitive: plane;" material="src: #texture_hall_hidden; repeat: 10 1">
     </a-mixin>
 
-    <a-mixin id="hall_light" light="type: spot; color: #e8a9f5; intensity: 1; angle: 90; castShadow: false">
+    <a-mixin id="hall_light" light="type: spot; color: #faff1a; intensity: 1; angle: 90; castShadow: false">
     </a-mixin>
 
 
@@ -132,7 +132,7 @@
         </a-entity>
         <a-entity mixin="hall_ceiling" scale="17 17 1" position="0 7 0" rotation="90 0 0">
         </a-entity>
-        <a-entity light="type: ambient; intensity: 0.2" position="0 3 0">
+        <a-entity light="type: ambient; intensity: 0.650; color:#b5c0c0" position="0 3 0">
         </a-entity>
 
         <a-entity id="North">
@@ -199,10 +199,6 @@
         <a-entity mixin="corridor_ground" scale="6 51.5 1" position="0 0 -33.25" rotation="-90 0 0">
         </a-entity>>
         <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="0 5 -33.75" rotation="90 0 0">
-        </a-entity>
-
-        <a-entity light="type: spot; color: #FFF; intensity: 1; castShadow: false; angle: 15; distance: 4"
-                  position="0 4 -33.75" rotation="-90 0 0">
         </a-entity>
 
         <a-entity id="WallRight">
