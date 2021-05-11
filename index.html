@@ -59,7 +59,7 @@
               rotation="0 180 0" scale="5 5 5">
     </a-entity>
 
-    <a-mixin id="wall_lamp" gltf-model="#lamp" scale="0.5 0.5 0.5">
+    <a-mixin id="wall_lamp" gltf-model="#lamp" scale="0.8 0.8 0.8">
     </a-mixin>
 
     <!--     Spawn assets      -->
@@ -204,13 +204,14 @@
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -14">
             </a-entity>
 
-            <a-entity mixin="wall_lamp" position="4 2.5 -18.75" rotation="0 90 0">
+            <a-entity mixin="wall_lamp" position="4 2.5 -18.75" shadow="receive:true" rotation="0 90 0">
             </a-entity>
-            <a-entity light="type: point; color: #FFF; intensity: 0.6" position="4 2.5 -18.75">
+            <a-entity light="type: point; color: #FFF; intensity: 0.6; castShadow:true; shadowCameraFov:40; shadowCameraVisible:true"
+                      position="4 2.5 -18.75">
             </a-entity>
             <a-entity mixin="wall_lamp" position="4 2.5 -9.25" rotation="0 -90 0">
             </a-entity>
-            <a-entity light="type: ambient; color: #FFF; intensity: 0.6" position="4 2.5 -9.25">
+            <a-entity light="type: ambient; color: #AFA; intensity: 0.3" position="0 2.5 0">
             </a-entity>
           </a-entity>
 
