@@ -59,6 +59,8 @@
               rotation="0 180 0" scale="5 5 5">
     </a-entity>
 
+    <a-mixin id="wall_lamp" gltf-model="#lamp" scale="0.5 0.5 0.5">
+    </a-mixin>
 
     <!--     Spawn assets      -->
 
@@ -202,9 +204,9 @@
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -14">
             </a-entity>
 
-            <a-entity gltf-model="#lamp" scale="0.008 0.008  0.008 " position="4 2.5 -19" rotation="0 0 0">
+            <a-entity mixin="wall_lamp" position="4 2.5 -18.75" rotation="0 90 0">
             </a-entity>
-            <a-entity gltf-model="#lamp" scale="0.008 0.008  0.008 " position="4 2.5 -19" rotation="0 0 0">
+            <a-entity mixin="wall_lamp" position="4 2.5 -9.25" rotation="0 -90 0">
             </a-entity>
           </a-entity>
 
