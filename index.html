@@ -13,7 +13,8 @@
 </head>
 
 <body>
-  <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable">
+  <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable"
+           stats>
     <a-assets>
 
       <img id="texture_sky" src="assets/img/sky.jpg" />
@@ -121,7 +122,7 @@
         </a-entity>
         <a-entity mixin="hall_ceiling" scale="17 17 1" position="0 7 0" rotation="90 0 0">
         </a-entity>
-        <a-entity glb-model="#candlestick" scale="1 1 1" position="0 7 0" rotation="0 0 0">
+        <a-entity gltf-model="#candlestick" scale="1 1 1" position="0 7 0" rotation="0 0 0">
         </a-entity>
 
 
