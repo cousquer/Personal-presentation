@@ -35,7 +35,7 @@
     </a-assets>
 
 
-    <!--   ---------     Global assets     ----------   -->
+    <!--   Global assets   -->
 
     <a-sky src="#texture_sky"></a-sky>
     <a-entity text="align: center; color: red; value: Bienvenue" width="5" position="0 1.5 -2" rotation="0 0 0"
@@ -55,13 +55,13 @@
     </a-entity>
 
 
-    <!--   ---------     Spawn assets     ----------   -->
+    <!--     Spawn assets      -->
 
     <a-mixin id="ground_spawn" src="#texture_spawn_ground" rotation="-90 0 0">
     </a-mixin>
 
 
-    <!--   ---------     Hall assets     ----------   -->
+    <!--    Hall assets     -->
 
     <a-mixin id="hall_ground" geometry="primitive: plane;" material="src: #texture_hall_ground; repeat: 3 4">
     </a-mixin>
@@ -69,13 +69,13 @@
     </a-mixin>
     <a-mixin id="hall_wall" geometry="primitive: plane;" material="src: #texture_wall; repeat: 2 2">
     </a-mixin>
-    <a-mixin id="hall_beam" geometry="primitive: plane;" material="src: #texture_hall_beam; repeat: 15 2">
+    <a-mixin id="hall_beam" geometry="primitive: plane;" material="src: #texture_hall_beam; repeat: 10 2">
     </a-mixin>
     <a-mixin id="hall_hidden" geometry="primitive: plane;" material="src: #texture_hall_hidden; repeat: 1 10">
     </a-mixin>
 
 
-    <!--   ---------     Corridor's assets     ----------   -->
+    <!--    Corridor's assets     -->
 
     <a-mixin id="corridor_ground" geometry="primitive: plane;" material="src: #texture_corridor_ground; repeat: 2 10">
     </a-mixin>
@@ -83,27 +83,27 @@
     </a-mixin>
 
 
-    <!--   ---------     Corridor's recess assets     ----------   -->
+    <!--    Corridor's recess assets    -->
 
     <a-mixin id="recess_ext_hall" geometry="primitive: plane;" material="src: #texture_wall; repeat: 1 2">
-    </a-mixin><!-- Wall stuck to the hall -->
+    </a-mixin>
     <a-mixin id="recess_ext_inter" geometry="primitive: plane;" material="src: #texture_wall; repeat: 1 2">
-    </a-mixin><!-- Wall inter recess -->
+    </a-mixin>
     <a-mixin id="recess_ext_middle" geometry="primitive: plane;" material="src: #texture_wall; repeat: 4 1">
-    </a-mixin><!-- Wall middle -->
+    </a-mixin>
     <a-mixin id="recess_int_down" geometry="primitive: plane;" material="src: #texture_recess_floor; repeat: 6 2">
-    </a-mixin><!-- Recess down -->
+    </a-mixin>
     <a-mixin id="recess_int_up" geometry="primitive: plane;" material="src: #texture_recess_wall">
-    </a-mixin><!-- Recess up -->
+    </a-mixin>
     <a-mixin id="recess_int_right" geometry="primitive: plane;" material="src: #texture_recess_wall">
-    </a-mixin><!-- Recess right -->
+    </a-mixin>
     <a-mixin id="recess_int_left" geometry="primitive: plane;" material="src: #texture_recess_wall">
-    </a-mixin><!-- Recess left -->
+    </a-mixin>
     <a-mixin id="recess_int_back" geometry="primitive: plane;" material="src: #texture_recess_wall">
-    </a-mixin><!-- Recess back -->
+    </a-mixin>
 
 
-    <!--   ---------     Scene     ----------   -->
+    <!--    Scene    -->
 
 
     <a-entity id="museum" highlight>
