@@ -110,12 +110,12 @@
     <a-mixin id="recess_int_back" geometry="primitive: plane;" material="src: #texture_recess_wall">
     </a-mixin>
 
-
+    <!--
     <a-mixin id="wall_lamp" gltf-model="#lamp" scale="0.8 0.8 0.8">
     </a-mixin>
     <a-mixin id="wall_light" light="type: spot; color: #FFF; intensity: 1; castShadow: false; angle: 15; distance: 4">
     </a-mixin>
-
+-->
 
     <!--    Scene    -->
 
@@ -201,6 +201,10 @@
         <a-entity mixin="corridor_ceiling" scale="6 50.5 1" position="0 5 -33.75" rotation="90 0 0">
         </a-entity>
 
+        <a-entity light="type: spot; color: #FFF; intensity: 1; castShadow: false; angle: 15; distance: 4"
+                  position="0 4 -33.75" rotation="-90 0 0">
+        </a-entity>
+
         <a-entity id="WallRight">
           <a-entity id="PA8">
             <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 -90 0" position="3 2.5 -8.25">
@@ -219,17 +223,6 @@
             <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="4 2.5 -19">
             </a-entity>
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -14">
-            </a-entity>
-
-            <a-entity id="lights">
-              <a-entity mixin="wall_lamp" position="4 3 -9.25" rotation="0 -90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="4 4 -9.25" rotation="-90 0 0">
-              </a-entity>
-              <a-entity mixin="wall_lamp" position="4 3 -18.75" rotation="0 90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="4 4 -18.75" rotation="-90 0 0">
-              </a-entity>
             </a-entity>
           </a-entity>
 
@@ -251,17 +244,6 @@
             </a-entity>
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -26.5">
             </a-entity>
-
-            <a-entity id="lights">
-              <a-entity mixin="wall_lamp" position="4 3 -21.75" rotation="0 -90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="4 4 -21.75" rotation="-90 0 0">
-              </a-entity>
-              <a-entity mixin="wall_lamp" position="4 3 -31.25" rotation="0 90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="4 4 -31.25" rotation="-90 0 0">
-              </a-entity>
-            </a-entity>
           </a-entity>
 
           <a-entity id="RobotArticule">
@@ -282,17 +264,6 @@
             </a-entity>
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -39">
             </a-entity>
-
-            <a-entity id="lights">
-              <a-entity mixin="wall_lamp" position="4 3 -34.25" rotation="0 -90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="4 4 -34.25" rotation="-90 0 0">
-              </a-entity>
-              <a-entity mixin="wall_lamp" position="4 3 -43.75" rotation="0 90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="4 4 -43.75" rotation="-90 0 0">
-              </a-entity>
-            </a-entity>
           </a-entity>
 
           <a-entity id="RayTracing">
@@ -312,17 +283,6 @@
             <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="4 2.5 -56.5">
             </a-entity>
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -51.5">
-            </a-entity>
-
-            <a-entity id="lights">
-              <a-entity mixin="wall_lamp" position="4 3 -46.75" rotation="0 -90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="4 4 -46.75" rotation="-90 0 0">
-              </a-entity>
-              <a-entity mixin="wall_lamp" position="4 3 -56.25" rotation="0 90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="4 4 -56.25" rotation="-90 0 0">
-              </a-entity>
             </a-entity>
           </a-entity>
         </a-entity>
@@ -346,18 +306,8 @@
             </a-entity>
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 -14">
             </a-entity>
-
-            <a-entity id="lights">
-              <a-entity mixin="wall_lamp" position="-4 3 -9.25" rotation="0 -90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="-4 4 -9.25" rotation="-90 0 0">
-              </a-entity>
-              <a-entity mixin="wall_lamp" position="-4 3 -18.75" rotation="0 90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="-4 4 -18.75" rotation="-90 0 0">
-              </a-entity>
-            </a-entity>
           </a-entity>
+
           <a-entity id="ChattingApp">
             <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -20.25">
             </a-entity>
@@ -375,17 +325,6 @@
             <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="-4 2.5 -31.5">
             </a-entity>
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 -26.5">
-            </a-entity>
-
-            <a-entity id="lights">
-              <a-entity mixin="wall_lamp" position="-4 3 -21.75" rotation="0 90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="-4 4 -21.75" rotation="-90 0 0">
-              </a-entity>
-              <a-entity mixin="wall_lamp" position="-4 3 -31.25" rotation="0 -90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="-4 4 -31.25" rotation="-90 0 0">
-              </a-entity>
             </a-entity>
           </a-entity>
           <a-entity id="Covid">
@@ -406,19 +345,8 @@
             </a-entity>
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 -39">
             </a-entity>
-            <!-- 
-              <a-entity id="lights">
-                <a-entity mixin="wall_lamp" position="-4 3 -34.25" rotation="0 90 0">
-                </a-entity>
-                <a-entity mixin="wall_light" position="-4 4 -34.25" rotation="-90 0 0">
-                </a-entity>
-                <a-entity mixin="wall_lamp" position="-4 3 -43.75" rotation="0 -90 0">
-                </a-entity>
-                <a-entity mixin="wall_light" position="-4 4 -43.75" rotation="-90 0 0">
-                </a-entity>
-            </a-entity>
-            -->
           </a-entity>
+
           <a-entity id="MachineDeep_Learning">
             <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -45.25">
             </a-entity>
@@ -437,20 +365,9 @@
             </a-entity>
             <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 90 0" position="-5 2.5 -51.5">
             </a-entity>
-            <!-- 
-            <a-entity id="lights">
-              <a-entity mixin="wall_lamp" position="-4 3 -46.75" rotation="0 90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="-4 4 -46.75" rotation="-90 0 0">
-              </a-entity>
-              <a-entity mixin="wall_lamp" position="-4 3 -56.25" rotation="0 -90 0">
-              </a-entity>
-              <a-entity mixin="wall_light" position="-4 4 -56.25" rotation="-90 0 0">
-              </a-entity>
-            </a-entity>
-            -->
           </a-entity>
         </a-entity>
+
         <a-entity id="EndCorridor">
           <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -57.75">
           </a-entity>
