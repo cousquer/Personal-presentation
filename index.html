@@ -533,9 +533,19 @@
         <a-plane src="#texture_wip" height="5" width="6" rotation="0 90 0" repeat="1 1" position="-7.5 2.5 0">
         </a-plane>
 
+        <!-- Fill blank space -->
+        <a-plane src="#texture_wall" height="5" width="45" rotation="0 180 0" repeat="20 2" position="44 2.5 3">
+        </a-plane>
+        <a-plane src="#texture_wall" height="5" width="45" rotation="0 0 0" repeat="20 2" position="44 2.5 3">
+        </a-plane>
+
         <a-entity id=" EndCorridor">
+          <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 180 0" position="3 2.5 57.75">
+          </a-entity>
           <a-plane src="#texture_wall" height="5" width="6" rotation="0 90 0" repeat="2 2" position="-15 2.5 0">
           </a-plane>
+          <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 0 0" position="-3 2.5 57.75">
+          </a-entity>
         </a-entity>
       </a-entity>
 
