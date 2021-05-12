@@ -23,7 +23,7 @@ AFRAME.registerComponent('info-panel', {
 
     this.onMenuButtonClick = this.onMenuButtonClick.bind(this)
     this.onBackgroundClick = this.onBackgroundClick.bind(this)
-    this.backgroundEl = document.querySelector('#infoPanel')
+    this.backgroundEl = document.querySelector('#camera')
     for (var i = 0; i < buttonEls.length; ++i) {
       buttonEls[i].addEventListener('click', this.onMenuButtonClick)
     }
