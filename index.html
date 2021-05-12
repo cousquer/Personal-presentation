@@ -8,6 +8,7 @@
 
   <script src="scripts/aframe-v1.2.0.min.js"></script>
   <script src="scripts/highlight.js"></script> <!--  for the UI -->
+  <script src="scripts/info-panel.js"></script>
 
   <!-- 
     some texture on https://www.swtexture.com/ 
@@ -121,6 +122,7 @@
              animation__scale_reverse="property: scale; to: 0.9 0.9 0.9; dur: 200; startEvents: mouseleave">
     </a-mixin>
 
+
     <!--
     <a-mixin id="wall_lamp" gltf-model="#lamp" scale="0.8 0.8 0.8">
     </a-mixin>  
@@ -130,12 +132,28 @@
     <!--    Camera for text pop up    -->
 
     <a-camera id="camera">
-      <a-entity id="ponyoMovieImage" text="align: center; color: red; value: Test pour infos bulle un "
-                position="0 0 -1" visible="false">
+
+      <a-entity id="fadeBackground" geometry="primitive: sphere; radius: 1.5"
+                material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6" visible="false">
       </a-entity>
-      <a-entity id="ponyoMovieImage" text="align: center; color: red; value: Test pour infos bulle deux"
-                position="0 0 -1" visible="false">
-      </a-entity>
+
+      <a-entity id="ui" position="0 1.6 -2.5">
+
+        <a-entity id="infoPanel" position="0 0 0.5" info-panel visible="false" scale="0.001 0.001 0.001"
+                  geometry="primitive: plane; width: 1.5; height: 1.8"
+                  material="color: #333333; shader: flat; transparent: false" class="raycastable">
+
+          <a-entity id="projectImage_M1_Pa8" text="align: center; color: red; value: Test pour infos bulle un "
+                    position="0 0 -1" visible="false">
+          </a-entity>
+
+          <a-entity id="movieTitle" position="-0.68 -0.1 0"
+                    text="shader: msdf; anchor: left; width: 1.5; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white; value: Test titre">
+          </a-entity>
+          <a-entity id="projectDescription" position="-0.68 -0.2 0"
+                    text="baseline: top; shader: msdf; anchor: left; width: 1.5; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white; value: Test description">
+          </a-entity>
+        </a-entity>
     </a-camera>
 
 
@@ -247,7 +265,10 @@
             </a-entity>
 
             <a-entity id="interraction">
-              <a-entity mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -10"
+              <a-entity id="M1_Pa8" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -10"
+                        class="raycastable menu-button">
+              </a-entity>
+              <a-entity id="M1_Fusee" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -10"
                         class="raycastable menu-button">
               </a-entity>
             </a-entity>
