@@ -8,22 +8,22 @@ AFRAME.registerComponent('info-panel', {
     this.movieTitleEl = document.querySelector('#projectTitle')
     this.movieDescriptionEl = document.querySelector('#projectDescription')
 
-    this.movieInfo = {
+    this.projectInfo = {
       M1_Pa8: {
         title: 'Projet a 8',
-        // imgEl: document.querySelector('#karigurashiMovieImage'),
+        imgEl: document.querySelector('#projectImage_M1_Pa8'),
         description: 'Description du pa8'
       },
       M1_Fusee: {
-        title: 'The Wind Rises (2013)',
-        // imgEl: document.querySelector('#kazetachinuMovieImage'),
+        title: 'Fusee Unity',
+        imgEl: document.querySelector('#projectImage_M1_Fusee'),
         description: 'Description de la fusee'
       }
     }
 
     this.onMenuButtonClick = this.onMenuButtonClick.bind(this)
     this.onBackgroundClick = this.onBackgroundClick.bind(this)
-    this.backgroundEl = document.querySelector('#museum')
+    this.backgroundEl = document.querySelector('#infoPanel')
     for (var i = 0; i < buttonEls.length; ++i) {
       buttonEls[i].addEventListener('click', this.onMenuButtonClick)
     }
@@ -35,7 +35,7 @@ AFRAME.registerComponent('info-panel', {
   },
 
   onMenuButtonClick: function (evt) {
-    var movieInfo = this.movieInfo[evt.currentTarget.id]
+    var projectInfo = this.projectInfo[evt.currentTarget.id]
 
     this.backgroundEl.object3D.scale.set(1, 1, 1)
 
@@ -45,11 +45,11 @@ AFRAME.registerComponent('info-panel', {
     this.fadeBackgroundEl.object3D.visible = true
 
     if (this.movieImageEl) { this.movieImageEl.object3D.visible = false; }
-    this.movieImageEl = movieInfo.imgEl
+    this.movieImageEl = projectInfo.imgEl
     this.movieImageEl.object3D.visible = true
 
-    this.movieTitleEl.setAttribute('text', 'value', movieInfo.title)
-    this.movieDescriptionEl.setAttribute('text', 'value', movieInfo.description)
+    this.movieTitleEl.setAttribute('text', 'value', projectInfo.title)
+    this.movieDescriptionEl.setAttribute('text', 'value', projectInfo.description)
   },
 
   onBackgroundClick: function (evt) {
