@@ -34,6 +34,8 @@
       <img id="texture_recess_floor" src="assets/img/recess-ground.jpg" />
       <img id="texture_corridor_ground" src="assets/img/corridor-ground.jpg" />
 
+      <img id="texture_interraction_info" src="assets/img/info.jpg" />
+
       <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
       <a-asset-item id="lamp" src="assets/obj/lamp/scene.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
@@ -44,7 +46,7 @@
     <!--   Global assets   -->
 
     <!--<a-sky src="#texture_sky"></a-sky>-->
-    <a-entity text="align: center; color: red; value: Bienvenue dans ce musée" position="0 1.5 -2" rotation="0 0 0"
+    <a-entity text="align: center; color: red; value: Bienvenue dans ce musee" position="0 1.5 -2" rotation="0 0 0"
               scale="5 5 5">
     </a-entity>
     <a-entity text="align: center; color: blue; value: North - M1 projects" position="0 1.5 -7.5" rotation="0 0 0"
@@ -108,6 +110,13 @@
     <a-mixin id="recess_int_left" geometry="primitive: plane;" material="src: #texture_recess_wall">
     </a-mixin>
     <a-mixin id="recess_int_back" geometry="primitive: plane;" material="src: #texture_recess_wall">
+    </a-mixin>
+
+
+    <!--    Human interraction    -->
+
+    <a-mixin id="interraction_info_bulle" geometry="primitive: circle; radius: 0.4"
+             material="src: #texture_interraction_info">
     </a-mixin>
 
     <!--
@@ -201,23 +210,32 @@
 
         <a-entity id="WallRight">
           <a-entity id="PA8">
-            <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 -90 0" position="3 2.5 -8.25">
-            </a-entity>
-            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 -14">
-            </a-entity>
-            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 0.5 -14">
+
+            <a-entity id="structure">
+              <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 -90 0" position="3 2.5 -8.25">
+              </a-entity>
+              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 4.5 -14">
+              </a-entity>
+              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 -90 0" position="3 0.5 -14">
+              </a-entity>
+
+              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 1 -14">
+              </a-entity>
+              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 -14">
+              </a-entity>
+              <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="4 2.5 -9">
+              </a-entity>
+              <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="4 2.5 -19">
+              </a-entity>
+              <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -14">
+              </a-entity>
             </a-entity>
 
-            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 180 90" position="4 1 -14">
+            <a-entity id="interraction">
+              <a-entity mixin="interraction_info_bulle" rotation="0 -90 0" position="4 1.5 -11">
+              </a-entity>
             </a-entity>
-            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 180 90" position="4 4 -14">
-            </a-entity>
-            <a-entity mixin="recess_int_right" scale="2 3 1" rotation="0 180 0" position="4 2.5 -9">
-            </a-entity>
-            <a-entity mixin="recess_int_left" scale="2 3 1" rotation="0 0 0" position="4 2.5 -19">
-            </a-entity>
-            <a-entity mixin="recess_int_back" scale="10 3 1" rotation="0 -90 0" position="5 2.5 -14">
-            </a-entity>
+
           </a-entity>
 
           <a-entity id="Parking">
