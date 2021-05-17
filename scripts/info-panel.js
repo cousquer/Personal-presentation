@@ -48,6 +48,16 @@ AFRAME.registerComponent('info-panel', {
         title: 'Machine et Deep Learning',
         imgEl: document.querySelector('#projectResume'),
         description: 'Le projet a realiser a 4 consistait en 2 parties. Premierement, trier des nombres manuscrits en images de 25x25 automatiquement en ML, puis deuxiemement trier des images de chiens et de chats en DL'
+      },
+      Other_This: {
+        title: 'Ce projet',
+        imgEl: document.querySelector('#projectResume'),
+        description: "J'ai realise cet espace immersif disponible sur internet et via casque VR lors de mon stage de M1 au Cnam (Conservatoir National des Arts et Metiers). J'ai utilise le framework 'Aframe' pour realise ce musee de mes projets"
+      },
+      Other_Dimension: {
+        title: 'Pokemon Dimension',
+        imgEl: document.querySelector('#projectResume'),
+        description: "Fan-game (jeux realise par et pour les fans d'une license en particulier) pokemon maintenant abandonne par son createur 'Zenos'. Pendant 3 ans, j'ai travaille principalement en tant que mappeur sur ce jeux. L'equipe etait composee uniquement de fan ne se connaissant pas dans la vie relle ayant entre 16 et 25 ans. Touts les echanges que ce soit d'idees, de conception ou pour disctuer se faisait via le logiciel Discord. Ce fut une innitiative se basant purement sur le volontariat et la bonne volontee des developpeurs"
       }
     }
 
