@@ -47,7 +47,27 @@ AFRAME.registerComponent('info-panel', {
       M1_MD_Learning: {
         title: 'Machine et Deep Learning',
         imgEl: document.querySelector('#projectResume'),
-        description: 'Le projet a realiser a 4 consistait en 2 parties. Premierement, trier des nombres manuscrits en images de 25x25 automatiquement en ML, puis deuxiemement trier des images de chiens et de chats en DL'
+        description: 'Le projet realise a 4 consistait en 2 parties. Premierement, trier des nombres manuscrits en images de 25x25 automatiquement en ML, puis deuxiemement trier des images de chiens et de chats en DL'
+      },
+      L3_NewsAdventure: {
+        title: 'Jeux mobile sous Unity',
+        imgEl: document.querySelector('#projectResume'),
+        description: 'Projet realise a 4 en C# sous Unity3D. Le but de projet etait de proposer des mini-jeux lies a une actualite sur mobile. Nous avons donc utilise Unity pour realiser une application sur pc et la transfere facilement vers mobile. Nous avond cree 2 jeux en 2D'
+      },
+      L3_Psy: {
+        title: 'Gestion de clients',
+        imgEl: document.querySelector('#projectResume'),
+        description: "Projet realise en solo en Java. La problematique etait de creer un programme de gestion d'emploi du temps pour qu'une psychologue puisse l'utiliser et acceder facilement a son emploi du temps ainsi qu'a chacun de ses clients et ainsi prendre entre autre des notes, des remarques, etc..."
+      },
+      L3_Graphs: {
+        title: 'Analyse de graphs',
+        imgEl: document.querySelector('#projectResume'),
+        description: "Projet realise en solo en Java. le but etait, a partir d'un fichier .txt comportant des noeuds et des vecteurs d'un graph, realiser plusieurs operation mathematiques. Comme reperer la branche la plus courte, le graph est-il optimise ? si non le faire, trouver les noeuds innutiles et repartir ses entrees, etc..."
+      },
+      L3_Garage: {
+        title: "Gestion d'emploi du temps",
+        imgEl: document.querySelector('#projectResume'),
+        description: "Projet realise en solo en Java. La problematique etait de concevoir un outil de gestion d'emploi du temps et de prises de rendez-vous complexes pour un garagiste (avec l'horaire, les pieces, le technicien, la voiture, les outils, le devis, etc...) "
       },
       L2_BwarioKart: {
         title: 'Jeux de gestion',
