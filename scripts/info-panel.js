@@ -2,7 +2,6 @@
 AFRAME.registerComponent('info-panel', {
   init: function () {
     var buttonEls = document.querySelectorAll('.menu-button')
-    var camera = document.querySelector('#camera')
     var fadeBackgroundEl = this.fadeBackgroundEl = document.querySelector('#fadeBackground')
 
     this.movieImageEl
@@ -37,9 +36,7 @@ AFRAME.registerComponent('info-panel', {
 
   onMenuButtonClick: function (evt) {
     var projectInfo = this.projectInfo[evt.currentTarget.id]
-
     this.backgroundEl.object3D.scale.set(1, 1, 1)
-    this.camera.setAttribute('look-controls', 'touchEnabled', 'false')
 
     this.el.object3D.scale.set(1, 1, 1)
     if (AFRAME.utils.device.isMobile()) { this.el.object3D.scale.set(1.4, 1.4, 1.4); }
@@ -52,6 +49,7 @@ AFRAME.registerComponent('info-panel', {
 
     this.movieTitleEl.setAttribute('text', 'value', projectInfo.title)
     this.movieDescriptionEl.setAttribute('text', 'value', projectInfo.description)
+    document.querySelector('#camera').setAttribute('look-controls', 'touchEnabled', 'false')
   },
 
   onBackgroundClick: function (evt) {
@@ -59,6 +57,6 @@ AFRAME.registerComponent('info-panel', {
     this.el.object3D.scale.set(0.001, 0.001, 0.001)
     this.el.object3D.visible = false
     this.fadeBackgroundEl.object3D.visible = false
-    this.camera.setAttribute('look-controls', 'touchEnabled', 'true')
+    document.querySelector('#camera').setAttribute('look-controls', 'touchEnabled', 'true')
   }
 })

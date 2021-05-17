@@ -133,6 +133,11 @@
 
     <a-camera id="camera" look-controls="touchEnabled: true;">
       <a-entity id="ui" position="0 0 -1">
+        <a-entity id="fadeBackground" geometry="primitive: plane; width: 1.7; height:2" position="0 0 -1.01"
+                  rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
+                  visible="false">
+        </a-entity>
+
         <a-entity id="infoPanel" position="0 0 0" info-panel visible="false" scale="0.001 0.001 0.001"
                   geometry="primitive: plane; width: 3.4; height: 1.7"
                   material="color: #FFF; shader: flat; transparent: false" class="raycastable">
@@ -149,11 +154,6 @@
           </a-entity>
           <a-entity id="projectDescription" position="-0.55 0 0"
                     text="baseline: top; shader: msdf; anchor: left; width: 1.5; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white; value: Test description">
-          </a-entity>
-
-          <a-entity id="fadeBackground" geometry="primitive: plane; width: 1.7; height:2" position="0 0 -1.01"
-                    rotation="0 180 0"
-                    material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6" visible="false">
           </a-entity>
         </a-entity>
     </a-camera>
