@@ -47,7 +47,7 @@ AFRAME.registerComponent('info-panel', {
       M1_MD_Learning: {
         title: 'Machine et Deep Learning',
         imgEl: document.querySelector('#projectResume'),
-        description: 'Le projet a realiser a 4 consistait en 2 parties. Premierement, trier des nombres en images de 25x25 automatiquement en ML, puis deuxiemement trier des images de chiens et de chats en DL'
+        description: 'Le projet a realiser a 4 consistait en 2 parties. Premierement, trier des nombres manuscrits en images de 25x25 automatiquement en ML, puis deuxiemement trier des images de chiens et de chats en DL'
       }
     }
 

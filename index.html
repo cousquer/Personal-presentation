@@ -133,7 +133,6 @@
     <!--    Camera for text pop up    -->
 
     <a-camera id="camera" wasd-controls-enabled="true" look-controls="touchEnabled: true;">
-
       <a-entity id="ui" position="0 0 -1">
         <a-entity id="fadeBackground" geometry="primitive: plane; width: 3.4; height: 1.7" position="0 0 -0.01"
                   rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
@@ -148,11 +147,11 @@
                     visible="false">
           </a-entity>
 
-          <a-entity id="projectTitle" position="0.6 0.5 0"
-                    text="shader: msdf; anchor: center; width: 1.5; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white; value: Test titre">
+          <a-entity id="projectTitle" position="0 0.5 0"
+                    text="shader: msdf; align: center; width: 1.2; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white; value: Test titre">
           </a-entity>
           <a-entity id="projectDescription" position="-0.55 0 0"
-                    text="baseline: top; shader: msdf; anchor: left; width: 1.5; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white; value: Test description">
+                    text="baseline: top; shader: msdf; anchor: left; width: 1.1; font: https://cdn.aframe.io/examples/ui/Viga-Regular.json; color: white; value: Test description">
           </a-entity>
         </a-entity>
     </a-camera>
