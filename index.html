@@ -131,7 +131,7 @@
 
     <!--    Camera for text pop up    -->
 
-    <a-camera id="camera">
+    <a-camera id="camera" look-controls="touchEnabled: true;">
 
       <a-entity id="fadeBackground" geometry="primitive: plane; width: 1.7; height:2" position="0 0 -1.01"
                 rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
@@ -163,7 +163,7 @@
     <!--    Scene    -->
 
 
-    <a-entity id="museum" highlight camera look-controls="magicWindowTrackingEnabled: false; touchEnabled: false;">
+    <a-entity id="museum" highlight>
 
       <!-- Hall / Spawn -->
 
