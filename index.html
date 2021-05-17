@@ -36,6 +36,7 @@
       <img id="texture_corridor_ground" src="assets/img/corridor-ground.jpg" />
 
       <img id="texture_interraction_info" src="assets/img/info.jpg" />
+      <img id="texture_interraction_wip" src="assets/img/imgAvenir.jpg" />
 
       <a-asset-item id="reticle" src="assets/obj/reticle.gltf" res ponse-type="arraybuffer" crossorigin="anonymous">
       </a-asset-item>
@@ -267,12 +268,16 @@
             </a-entity>
 
             <a-entity id="interraction">
-              <a-entity id="M1_Pa8" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -10"
+              <a-entity id="M1_Pa8" mixin="interraction_info_bulle" rotation="-20 -110 0" position="4 1.5 -10"
                         class="raycastable menu-button">
               </a-entity>
-              <a-entity id="M1_Fusee" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -10"
-                        class="raycastable menu-button">
-              </a-entity>
+
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-20 -90 0" position="4 1.5 -10">
+              </a-plane>
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-20 -90 0" position="4 1.5 -13">
+              </a-plane>
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-20 -70 0" position="4 1.5 -16">
+              </a-plane>
             </a-entity>
 
           </a-entity>
