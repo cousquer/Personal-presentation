@@ -418,7 +418,7 @@
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 -90 0" position="4 2 -52.25">
               </a-plane>
-              <a-entity text="align: center; color: white; value:Legende image 2" position="3.75 1.2 -55.25"
+              <a-entity text="align: center; color: white; value:Legende image 2" position="3.75 1.2 -52.25"
                         scale="4 4 4" rotation="0 -90 0">
               </a-entity>
 
@@ -433,6 +433,7 @@
 
         <a-entity id="WallLeft">
           <a-entity id="Fusee">
+            <a-entity id="structure"></a-entity>
             <a-entity mixin="recess_ext_hall" scale="1.5 5 1" rotation="0 90 0" position="-3 2.5 -8.25">
             </a-entity>
             <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -14">
@@ -452,62 +453,165 @@
             </a-entity>
           </a-entity>
 
-          <a-entity id="ChattingApp">
-            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -20.25">
-            </a-entity>
-            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -26.5">
-            </a-entity>
-            <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 -26.5">
+          <a-entity id="interraction">
+            <a-entity id="M1_Fusee" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4- 1.5 -10"
+                      class="raycastable menu-button">
             </a-entity>
 
-            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 -26.5">
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -12">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Legende image 1" position="-3.75 1.2 -12" scale="4 4 4"
+                      rotation="0 90 0">
             </a-entity>
-            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -26.5">
+
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -14.75">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Legende image 2" position="-3.75 1.2 -14.75"
+                      scale="4 4 4" rotation="0 90 0">
             </a-entity>
-            <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 -21.5">
-            </a-entity>
-            <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 -31.5">
-            </a-entity>
-            <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 -26.5">
+
+            <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -17.5">
+            </a-plane>
+            <a-entity text="align: center; color: white; value:Legende image 3" position="-3.75 1.2 -17.5" scale="4 4 4"
+                      rotation="0 90 0">
             </a-entity>
           </a-entity>
-          <a-entity id="Covid">
-            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -32.75">
-            </a-entity>
-            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -39">
-            </a-entity>
-            <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 -39">
+
+          <a-entity id="ChattingApp">
+            <a-entity id="structure">
+              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -20.25">
+              </a-entity>
+              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -26.5">
+              </a-entity>
+              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 -26.5">
+              </a-entity>
+
+              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 -26.5">
+              </a-entity>
+              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -26.5">
+              </a-entity>
+              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 -21.5">
+              </a-entity>
+              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 -31.5">
+              </a-entity>
+              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 -26.5">
+              </a-entity>
             </a-entity>
 
-            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 -39">
+            <a-entity id="interraction">
+              <a-entity id="M1_Chat" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -22.5"
+                        class="raycastable menu-button">
+              </a-entity>
+
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -24.5">
+              </a-plane>
+              <a-entity text="align: center; color: white; value:Legende image 1" position="-3.75 1.2 -24.5"
+                        scale="4 4 4" rotation="0 90 0">
+              </a-entity>
+
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -27.25">
+              </a-plane>
+              <a-entity text="align: center; color: white; value:Legende image 2" position="-3.75 1.2 -27.25"
+                        scale="4 4 4" rotation="0 90 0">
+              </a-entity>
+
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -30">
+              </a-plane>
+              <a-entity text="align: center; color: white; value:Legende image 3" position="-3.75 1.2 -30" scale="4 4 4"
+                        rotation="0 90 0">
+              </a-entity>
             </a-entity>
-            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -39">
+          </a-entity>
+
+          <a-entity id="Covid">
+            <a-entity id="structure">
+              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -32.75">
+              </a-entity>
+              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -39">
+              </a-entity>
+              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 -39">
+              </a-entity>
+
+              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 -39">
+              </a-entity>
+              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -39">
+              </a-entity>
+              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 -34">
+              </a-entity>
+              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 -44">
+              </a-entity>
+              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 -39">
+              </a-entity>
             </a-entity>
-            <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 -34">
-            </a-entity>
-            <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 -44">
-            </a-entity>
-            <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 -39">
+
+            <a-entity id="interraction">
+              <a-entity id="M1_Covid" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -35"
+                        class="raycastable menu-button">
+              </a-entity>
+
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -37">
+              </a-plane>
+              <a-entity text="align: center; color: white; value:Legende image 1" position="-3.75 1.2 -37" scale="4 4 4"
+                        rotation="0 90 0">
+              </a-entity>
+
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -39.75">
+              </a-plane>
+              <a-entity text="align: center; color: white; value:Legende image 2" position="-3.75 1.2 -39.75"
+                        scale="4 4 4" rotation="0 90 0">
+              </a-entity>
+
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -42.5">
+              </a-plane>
+              <a-entity text="align: center; color: white; value:Legende image 3" position="-3.75 1.2 -42.5"
+                        scale="4 4 4" rotation="0 90 0">
+              </a-entity>
             </a-entity>
           </a-entity>
 
           <a-entity id="MachineDeep_Learning">
-            <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -45.25">
-            </a-entity>
-            <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -51.5">
-            </a-entity>
-            <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 -51.5">
+            <a-entity id="structure">
+              <a-entity mixin="recess_ext_inter" scale="2.5 5 1" rotation="0 90 0" position="-3 2.5 -45.25">
+              </a-entity>
+              <a-entity mixin="recess_ext_middle" scale="10 1 1" rotation="0 90 0" position="-3 4.5 -51.5">
+              </a-entity>
+              <a-entity mixin="recess_ext_middle" scale="10 0.8 1" rotation="0 90 0" position="-3 0.4 -51.5">
+              </a-entity>
+
+              <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 -51.5">
+              </a-entity>
+              <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -51.5">
+              </a-entity>
+              <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 -46.5">
+              </a-entity>
+              <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 -56.5">
+              </a-entity>
+              <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 -51.5">
+              </a-entity>
             </a-entity>
 
-            <a-entity mixin="recess_int_down" scale="10 2 1" rotation="-90 0 90" position="-4 0.8 -51.5">
-            </a-entity>
-            <a-entity mixin="recess_int_up" scale="10 2 1" rotation="90 0 90" position="-4 4 -51.5">
-            </a-entity>
-            <a-entity mixin="recess_int_right" scale="2 3.2 1" rotation="0 180 0" position="-4 2.4 -46.5">
-            </a-entity>
-            <a-entity mixin="recess_int_left" scale="2 3.2 1" rotation="0 0 0" position="-4 2.4 -56.5">
-            </a-entity>
-            <a-entity mixin="recess_int_back" scale="10 3.2 1" rotation="0 90 0" position="-5 2.4 -51.5">
+            <a-entity id="interraction">
+              <a-entity id="M1_MD-Learning" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -47.5"
+                        class="raycastable menu-button">
+              </a-entity>
+
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -49.5">
+              </a-plane>
+              <a-entity text="align: center; color: white; value:Legende image 1" position="-3.75 1.2 -49.5"
+                        scale="4 4 4" rotation="0 90 0">
+              </a-entity>
+
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -52.25">
+              </a-plane>
+              <a-entity text="align: center; color: white; value:Legende image 2" position="-3.75 1.2 -52.25"
+                        scale="4 4 4" rotation="0 90 0">
+              </a-entity>
+
+              <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -54.75">
+              </a-plane>
+              <a-entity text="align: center; color: white; value:Legende image 3" position="-3.75 1.2 -54.75"
+                        scale="4 4 4" rotation="0 90 0">
+              </a-entity>
             </a-entity>
           </a-entity>
         </a-entity>

@@ -30,9 +30,24 @@ AFRAME.registerComponent('info-panel', {
         description: 'Ce projet a ete realise en binome en C++. Nous avons cree un moteur de rendu 3D non-temps reel base sur la technique du Ray Tracing'
       },
       M1_Fusee: {
-        title: 'Fusee Unity',
+        title: 'Construction et lancement de fusee ',
         imgEl: document.querySelector('#projectResume'),
         description: 'Ce projet a ete realise en binome en C# sous Unity3D. Il consistait a creer, dans un environnement 3D, un serious-game permettant au joueur de creer sa fusee avec des composants pre-crees puis de la faire, si bien construite, decoller'
+      },
+      M1_Chat: {
+        title: 'Application de chat',
+        imgEl: document.querySelector('#projectResume'),
+        description: "Projet solo réalisé en C#. Creation d'une simulation web (avec requetes, threads, base de donnee) dans laquelle j'ai integre une application de chat permettant a des utilisateurs de communiquer en temps réel via des messages prives et via des forums publiques"
+      },
+      M1_Covid: {
+        title: "Detection de COVID",
+        imgEl: document.querySelector('#projectResume'),
+        description: "Projet en duo réalisé en python via Spyder. Le but dans ce projet etait, a partir d'une large banque de donnee, analyser des images pour en faire resortir des caracteristiques. Nous avons donc choisi des images médicales de poumons en tomographie et realise un traitement par dessus afin de pouvoir differencier tres facilement et rapidement des poumons sains de poumons possedant le COVID"
+      },
+      M1_MD_Learning: {
+        title: 'Machine et Deel Learning',
+        imgEl: document.querySelector('#projectResume'),
+        description: 'Le projet a realiser a 4 consistait en 2 parties. Premierement, trier des nombres en images de 25x25 automatiquement en ML, puis deuxiemement trier des images de chiens et de chats en DL'
       }
     }
 
