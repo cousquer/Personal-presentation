@@ -49,7 +49,6 @@ AFRAME.registerComponent('info-panel', {
 
     this.movieTitleEl.setAttribute('text', 'value', projectInfo.title)
     this.movieDescriptionEl.setAttribute('text', 'value', projectInfo.description)
-    document.querySelector('#camera').setAttribute('look-controls', 'touchEnabled', false)
     document.querySelector('#camera').setAttribute('wasd-controls-enabled', false)
   },
 
@@ -58,7 +57,6 @@ AFRAME.registerComponent('info-panel', {
     this.el.object3D.scale.set(0.001, 0.001, 0.001)
     this.el.object3D.visible = false
     this.fadeBackgroundEl.object3D.visible = false
-    document.querySelector('#camera').setAttribute('look-controls', 'touchEnabled', true)
     document.querySelector('#camera').setAttribute('wasd-controls-enabled', true)
   }
 })
