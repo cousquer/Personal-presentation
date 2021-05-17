@@ -132,21 +132,18 @@
     <!--    Camera for text pop up    -->
 
     <a-camera id="camera" look-controls="touchEnabled: true;">
-      <a-entity id="ui" position="0 0 -1">
-        <a-entity id="fadeBackground" geometry="primitive: plane; width: 1.7; height:2" position="0 0 -1.01"
-                  rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
-                  visible="false">
-        </a-entity>
+      <a-entity id="fadeBackground" geometry="primitive: plane; width: 1.7; height:2" position="0 0 -1.01"
+                rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
+                visible="false">
+      </a-entity>
 
+      <a-entity id="ui" position="0 0 -1">
         <a-entity id="infoPanel" position="0 0 0" info-panel visible="false" scale="0.001 0.001 0.001"
                   geometry="primitive: plane; width: 3.4; height: 1.7"
                   material="color: #FFF; shader: flat; transparent: false" class="raycastable">
 
-          <a-entity id="projectImage_M1_Pa8" text="align: center; color: red; value: Test pour infos bulle un "
-                    position="0 0 -1" visible="false">
-          </a-entity>
-          <a-entity id="projectImage_M1_Fusee" text="align: center; color: red; value: Test pour infos bulle deux"
-                    position="0 0 -1" visible="false">
+          <a-entity id="projectResume" text="align: center; color: red; value: Debug text " position="0 0 -1"
+                    visible="false">
           </a-entity>
 
           <a-entity id="projectTitle" position="0.6 0.5 0"

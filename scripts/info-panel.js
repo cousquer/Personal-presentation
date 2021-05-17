@@ -11,12 +11,12 @@ AFRAME.registerComponent('info-panel', {
     this.projectInfo = {
       M1_Pa8: {
         title: 'Projet a 8',
-        imgEl: document.querySelector('#projectImage_M1_Pa8'),
+        imgEl: document.querySelector('#projectResume'),
         description: 'Description du pa8'
       },
       M1_Fusee: {
         title: 'Fusee Unity',
-        imgEl: document.querySelector('#projectImage_M1_Fusee'),
+        imgEl: document.querySelector('#projectResume'),
         description: 'Description de la fusee'
       }
     }
