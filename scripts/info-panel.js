@@ -49,6 +49,16 @@ AFRAME.registerComponent('info-panel', {
         imgEl: document.querySelector('#projectResume'),
         description: 'Le projet a realiser a 4 consistait en 2 parties. Premierement, trier des nombres manuscrits en images de 25x25 automatiquement en ML, puis deuxiemement trier des images de chiens et de chats en DL'
       },
+      L2_BwarioKart: {
+        title: 'Jeux de gestion',
+        imgEl: document.querySelector('#projectResume'),
+        description: "Projet realise en trinome et code en C. C'est un jeu de gestion ou le joueur gere des karting. Il dispose de points de ventes ainsi que de points de reparation afin de réaprer les karting utilises. Le joueur dispose de nombreuses ameliorations de karting afin d'etre rentable. Le but etant de gagner de l'argent. "
+      },
+      L2_ObjectiveEquilibrium: {
+        title: 'Jeux de societe adapte aux non-voyants',
+        imgEl: document.querySelector('#projectResume'),
+        description: 'Projet a 5 sur un semestre en entier. Nous avons realise un jeu de societe a bases de cartes et de pions ayant la particularite de pouvoir etre joue par des personnes non-voyantes'
+      },
       Other_This: {
         title: 'Ce projet',
         imgEl: document.querySelector('#projectResume'),
