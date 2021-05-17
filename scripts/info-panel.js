@@ -12,12 +12,27 @@ AFRAME.registerComponent('info-panel', {
       M1_Pa8: {
         title: 'Projet a 8',
         imgEl: document.querySelector('#projectResume'),
-        description: 'Description du pa8'
+        description: "Ce projet à 8 qui s'est déroulé sur 1 an et dont j'avais pour rôle chef de projet à consister à développer un site pour animaux en language ELM disponible sur le lien suivant : https://petopia-app.netlify.app/fr (site non fini)"
+      },
+      M1_Parking: {
+        title: "Analyse d'image",
+        imgEl: document.querySelector('#projectResume'),
+        description: "Ce projet à été réalisé en trinôme en C sous OpenCV. Le but est, à partir d'une image de parking simple, déterminer automatiquement combien de places sont prises et combien de places ne le sont pas. Nous avons donc pu détecter les places puis si une voiture ou une moto se situait dessus ou non"
+      },
+      M1_Robot: {
+        title: "Robot manipulateur",
+        imgEl: document.querySelector('#projectResume'),
+        description: "Ce projet à été réalisé en binôme en C# sous Unity3D. Ce projet consistait à appliquer les techniques de navigation, sélection et manipulation à un robot type d'usine muni d'un bra manipulateur avec une base mouvante"
+      },
+      M1_RayTracing: {
+        title: 'Ray Tracing',
+        imgEl: document.querySelector('#projectResume'),
+        description: 'Ce projet à été réalisé en binôme en C++. Nous avons créé un moteur de rendu 3D non-temps réel basé sur la technique du Ray Tracing'
       },
       M1_Fusee: {
         title: 'Fusee Unity',
         imgEl: document.querySelector('#projectResume'),
-        description: 'Description de la fusee'
+        description: 'Ce projet à été réalisé en binôme en C# sous Unity3D. Il consistait à créer, dans un environnement 3D, un serious-game permettant au joueur de créer sa fusée avec des composants pré-créés puis de la faire, si bien construite, décoller'
       }
     }
 
