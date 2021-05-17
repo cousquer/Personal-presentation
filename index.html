@@ -132,14 +132,14 @@
     <!--    Camera for text pop up    -->
 
     <a-camera id="camera" look-controls="touchEnabled: true;">
-      <a-entity id="fadeBackground" geometry="primitive: plane; width: 1.7; height:2" position="0 0 -1.01"
+      <a-entity id="fadeBackground" geometry="primitive: plane; width: 3.4; height: 1.7" position="0 0 -1.01"
                 rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
                 visible="false">
       </a-entity>
 
       <a-entity id="ui" position="0 0 -1">
         <a-entity id="infoPanel" position="0 0 0" info-panel visible="false" scale="0.001 0.001 0.001"
-                  geometry="primitive: plane; width: 3.4; height: 1.7"
+                  geometry="primitive: plane; width: 1.2; height: 1.5"
                   material="color: #FFF; shader: flat; transparent: false" class="raycastable">
 
           <a-entity id="projectResume" text="align: center; color: red; value: Debug text " position="0 0 -1"
