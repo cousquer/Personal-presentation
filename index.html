@@ -19,7 +19,7 @@
 
 <body>
   <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable"
-           stats>
+           stats webxr="referenceSpaceType: local-floor">
     <a-assets>
 
       <!--<img id="texture_sky" src="assets/img/sky.jpg" />-->
@@ -131,7 +131,7 @@
 
     <!--    Camera for text pop up    -->
 
-    <a-camera id="camera" look-controls="touchEnabled: true;">
+    <a-camera id="camera" wasd-controls-enabled="true" look-controls="touchEnabled: true;">
       <a-entity id="fadeBackground" geometry="primitive: plane; width: 3.4; height: 1.7" position="0 0 -1.01"
                 rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
                 visible="false">
