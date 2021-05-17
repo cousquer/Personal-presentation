@@ -12,27 +12,27 @@ AFRAME.registerComponent('info-panel', {
       M1_Pa8: {
         title: 'Projet a 8',
         imgEl: document.querySelector('#projectResume'),
-        description: "Ce projet a 8 qui s'est deroule sur 1 an et dont j'avais pour rôle chef de projet a consister a developper un site pour animaux en language ELM disponible sur le lien suivant : https://petopia-app.netlify.app/fr (site non fini)"
+        description: "Ce projet a 8 qui s'est deroule sur 1 an et dont j'avais pour role chef de projet a consiste a developper un site pour animaux en language ELM disponible sur le lien suivant : https://petopia-app.netlify.app/fr (site non fini)"
       },
       M1_Parking: {
         title: "Analyse d'image",
         imgEl: document.querySelector('#projectResume'),
-        description: "Ce projet a ete realise en trinôme en C sous OpenCV. Le but est, a partir d'une image de parking simple, determiner automatiquement combien de places sont prises et combien de places ne le sont pas. Nous avons donc pu detecter les places puis si une voiture ou une moto se situait dessus ou non"
+        description: "Ce projet a ete realise en trinome en C sous OpenCV. Le but est, a partir d'une image de parking simple, determiner automatiquement combien de places sont prises et combien de places ne le sont pas. Nous avons donc pu detecter les places puis si une voiture ou une moto se situait dessus ou non"
       },
       M1_Robot: {
         title: 'Robot manipulateur',
         imgEl: document.querySelector('#projectResume'),
-        description: "Ce projet a ete realise en binôme en C# sous Unity3D. Ce projet consistait a appliquer les techniques de navigation, selection et manipulation a un robot type d'usine muni d'un bra manipulateur avec une base mouvantedz"
+        description: "Ce projet a ete realise en binome en C# sous Unity3D. Ce projet consistait a appliquer les techniques de navigation, selection et manipulation a un robot type d'usine muni d'un bra manipulateur avec une base mouvantedz"
       },
       M1_RayTracing: {
         title: 'Ray Tracing',
         imgEl: document.querySelector('#projectResume'),
-        description: 'Ce projet a ete realise en binôme en C++. Nous avons cree un moteur de rendu 3D non-temps reel base sur la technique du Ray Tracing'
+        description: 'Ce projet a ete realise en binome en C++. Nous avons cree un moteur de rendu 3D non-temps reel base sur la technique du Ray Tracing'
       },
       M1_Fusee: {
         title: 'Fusee Unity',
         imgEl: document.querySelector('#projectResume'),
-        description: 'Ce projet a ete realise en binôme en C# sous Unity3D. Il consistait a creer, dans un environnement 3D, un serious-game permettant au joueur de creer sa fusee avec des composants pre-crees puis de la faire, si bien construite, decoller'
+        description: 'Ce projet a ete realise en binome en C# sous Unity3D. Il consistait a creer, dans un environnement 3D, un serious-game permettant au joueur de creer sa fusee avec des composants pre-crees puis de la faire, si bien construite, decoller'
       }
     }
 
