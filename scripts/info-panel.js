@@ -22,7 +22,7 @@ AFRAME.registerComponent('info-panel', {
       M1_Robot: {
         title: 'Robot manipulateur',
         imgEl: document.querySelector('#projectResume'),
-        description: "Ce projet a ete realise en binome en C# sous Unity3D. Ce projet consistait a appliquer les techniques de navigation, selection et manipulation a un robot type d'usine muni d'un bra manipulateur avec une base mouvantedz"
+        description: "Ce projet a ete realise en binome en C# sous Unity3D. Ce projet consistait a appliquer les techniques de navigation, selection et manipulation a un robot type d'usine muni d'un bras manipulateur avec une base mouvantedz"
       },
       M1_RayTracing: {
         title: 'Ray Tracing',
@@ -37,15 +37,15 @@ AFRAME.registerComponent('info-panel', {
       M1_Chat: {
         title: 'Application de chat',
         imgEl: document.querySelector('#projectResume'),
-        description: "Projet solo réalisé en C#. Creation d'une simulation web (avec requetes, threads, base de donnee) dans laquelle j'ai integre une application de chat permettant a des utilisateurs de communiquer en temps réel via des messages prives et via des forums publiques"
+        description: "Projet solo realise en C#. Creation d'une simulation web (avec requetes, threads, base de donnee) dans laquelle j'ai integre une application de chat permettant a des utilisateurs de communiquer en temps reel via des messages prives et via des forums publiques"
       },
       M1_Covid: {
-        title: "Detection de COVID",
+        title: 'Detection de COVID',
         imgEl: document.querySelector('#projectResume'),
-        description: "Projet en duo réalisé en python via Spyder. Le but dans ce projet etait, a partir d'une large banque de donnee, analyser des images pour en faire resortir des caracteristiques. Nous avons donc choisi des images médicales de poumons en tomographie et realise un traitement par dessus afin de pouvoir differencier tres facilement et rapidement des poumons sains de poumons possedant le COVID"
+        description: "Projet en duo realise en python via Spyder. Le but dans ce projet etait, a partir d'une large banque d'images, de les analyser pour en faire resortir des caracteristiques. Nous avons donc choisi des images medicales de poumons en tomographie et realise un traitement par dessus afin de pouvoir differencier tres facilement et rapidement des poumons sains de poumons possedant le COVID"
       },
       M1_MD_Learning: {
-        title: 'Machine et Deel Learning',
+        title: 'Machine et Deep Learning',
         imgEl: document.querySelector('#projectResume'),
         description: 'Le projet a realiser a 4 consistait en 2 parties. Premierement, trier des nombres en images de 25x25 automatiquement en ML, puis deuxiemement trier des images de chiens et de chats en DL'
       }
