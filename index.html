@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse; fuse: true" raycaster="objects: .raycastable"
+  <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable"
            stats webxr="referenceSpaceType: local-floor">
     <a-assets>
 
@@ -268,7 +268,7 @@
 
             <a-entity id="interraction">
               <a-entity id="M1_Pa8" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -10"
-                        class="raycastable menu-button" cursor>
+                        class="raycastable menu-button" cursor="fuse:true; fuseTimeout: 1000">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 -90 0" position="4 2 -12">
