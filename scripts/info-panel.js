@@ -87,7 +87,7 @@ AFRAME.registerComponent('info-panel', {
       Other_Dimension: {
         title: 'Pokemon Dimension',
         imgEl: document.querySelector('#projectResume'),
-        description: "Fan-game (jeux realise par et pour les fans d'une license en particulier) pokemon maintenant abandonne par son createur 'Zenos'. Pendant 3 ans, j'ai travaille principalement en tant que mappeur sur ce jeux. L'equipe etait composee uniquement de fan ne se connaissant pas dans la vie relle ayant entre 16 et 25 ans. Touts les echanges que ce soit d'idees, de conception ou pour disctuer se faisait via le logiciel Discord. Ce fut une innitiative se basant purement sur le volontariat et la bonne volontee des developpeurs"
+        description: "Fan-game (jeux realise par et pour les fans d'une license en particulier) pokemon maintenant abandonne par son createur 'Zenos'. Pendant 3 ans, j'ai travaille principalement en tant que mappeur sur ce jeux. L'equipe etait composee uniquement de fan ne se connaissant pas dans la vie relle ayant entre 16 et 25 ans. Touts les echanges que ce soit d'idees, de conception ou pour disctuer se faisaient via le logiciel Discord. Ce fut une innitiative se basant purement sur le volontariat et la bonne volontee des developpeurs"
       }
     }
 
