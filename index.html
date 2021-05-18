@@ -8,7 +8,7 @@
 
   <script src="scripts/aframe-v1.2.0.min.js"></script>
   <script src="scripts/highlight.js"></script> <!--  for the UI -->
-  <script src="scripts/info-panel.js"></script>
+  <script src="scripts/interractions.js"></script>
 
   <!-- 
     some texture on https://www.swtexture.com/ 
@@ -134,7 +134,10 @@
 
     <!--    Phones only    -->
 
-    <a-mixin id="tp_circles" geometry="primitive: circle;" radius="0.5" material="src: #texture_interraction_tp">
+    <a-mixin id="tp_circles_main" geometry="primitive: circle;" radius="0.5" material="src: #texture_interraction_tp">
+    </a-mixin>
+    <a-mixin id="tp_circles_secondary" geometry="primitive: circle;" radius="0.3"
+             material="src: #texture_interraction_tp">
     </a-mixin>
 
 
@@ -149,7 +152,7 @@
                   visible="false">
         </a-entity>
 
-        <a-entity id="infoPanel" position="0 0 0" info-panel visible="false" scale="0.001 0.001 0.001"
+        <a-entity id="infoPanel" position="0 0 0" interractions visible="false" scale="0.001 0.001 0.001"
                   geometry="primitive: plane; width: 1.2; height: 1.5"
                   material="color: #FFF; shader: flat; transparent: false" class="raycastable"
                   sound="src: assets\audio\closing.wav; on: click; volume:1">
@@ -186,8 +189,6 @@
         </a-entity>
         <a-entity mixin="wall_lamp" scale="0.025 0.025 0.025" position="0 4.4 0" rotation="0 0 0">
         </a-entity>
-        <a-entity mixin="tp_circles" position="3 0.01 0" rotation="-90 0 0">
-        </a-entity>
         <a-entity light="type: ambient; intensity: 0.650; color:#e4e6dd; castShadow: false" position="0 3 0">
         </a-entity>
 
@@ -204,6 +205,8 @@
           </a-entity>
           <a-entity mixin="hall_light" position="0 6 -8" rotation="90 0 0">
           </a-entity>
+          <a-entity mixin="tp_circles_main" position="0 0.01 -7.5" rotation="-90 0 0">
+          </a-entity>
         </a-entity>
         <a-entity id="East">
           <a-entity mixin="hall_wall" scale="4.5 5 1" position="7.5 2.5 -5.25" rotation="0 -90 0">
@@ -217,6 +220,8 @@
           <a-entity mixin="hall_hidden" scale="17 2 1" position="8.5 6 0" rotation="0 -90 0">
           </a-entity>
           <a-entity mixin="hall_light" position="8 6 0" rotation="90 0 0">
+          </a-entity>
+          <a-entity mixin="tp_circles_main" position="7.5 0.01 0" rotation="-90 0 0">
           </a-entity>
         </a-entity>
         <a-entity id="West">
@@ -245,6 +250,8 @@
           <a-entity mixin="hall_hidden" scale="17 2 1" position="0 6 8.5" rotation="0 180 0">
           </a-entity>
           <a-entity mixin="hall_light" position="0 6 8" rotation="90 0 0">
+          </a-entity>
+          <a-entity mixin="tp_circles_mains" position="0 0.01 7.5" rotation="-90 0 0">
           </a-entity>
         </a-entity>
       </a-entity>
