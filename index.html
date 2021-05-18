@@ -105,13 +105,13 @@
     </a-mixin>
     <a-mixin id="recess_int_down" geometry="primitive: plane;" material="src: #texture_recess_floor; repeat: 6 2">
     </a-mixin>
-    <a-mixin id="recess_int_up" geometry="primitive: plane;" material="src: #texture_recess_wall">
+    <a-mixin id="recess_int_up" geometry="primitive: plane;" material="src: #texture_recess_wall; repeat: 2.25 1">
     </a-mixin>
     <a-mixin id="recess_int_right" geometry="primitive: plane;" material="src: #texture_recess_wall; repeat: 0.5 1">
     </a-mixin>
     <a-mixin id="recess_int_left" geometry="primitive: plane;" material="src: #texture_recess_wall; repeat: 0.5 1">
     </a-mixin>
-    <a-mixin id="recess_int_back" geometry="primitive: plane;" material="src: #texture_recess_wall; repeat: 2.5 1">
+    <a-mixin id="recess_int_back" geometry="primitive: plane;" material="src: #texture_recess_wall; repeat: 2.25 1">
     </a-mixin>
 
 
@@ -269,7 +269,7 @@
 
             <a-entity id="interraction">
               <a-entity id="M1_Pa8" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -10"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button" cursor raycaster="far: 10; interval: 1000; objects: .clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 -90 0" position="4 2 -12">
