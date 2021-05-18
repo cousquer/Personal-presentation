@@ -35,6 +35,7 @@
       <img id="texture_recess_floor" src="assets/img/recess-ground.jpg" />
       <img id="texture_corridor_ground" src="assets/img/corridor-ground.jpg" />
 
+      <img id="texture_interraction_tp" src="assets/img/teleport.jpg" />
       <img id="texture_interraction_info" src="assets/img/info.jpg" />
       <img id="texture_interraction_wip" src="assets/img/imgAvenir.jpg" />
 
@@ -131,6 +132,12 @@
     </a-mixin>
 
 
+    <!--    Phones only    -->
+
+    <a-mixin id="tp_circles" geometry="primitive: circle;" radius="0.5" material="src: #texture_interraction_tp">
+    </a-mixin>
+
+
     <!--    Camera for text pop up    -->
 
     <a-camera id="camera" wasd-controls-enabled="true" look-controls="touchEnabled: true;">
@@ -178,6 +185,8 @@
         <a-entity mixin="hall_ceiling" scale="17 17 1" position="0 7 0" rotation="90 0 0">
         </a-entity>
         <a-entity mixin="wall_lamp" scale="0.025 0.025 0.025" position="0 4.4 0" rotation="0 0 0">
+        </a-entity>
+        <a-entity mixin="tp_circles" position="3 0.01 0" rotation="-90 0 0">
         </a-entity>
         <a-entity light="type: ambient; intensity: 0.650; color:#e4e6dd; castShadow: false" position="0 3 0">
         </a-entity>
