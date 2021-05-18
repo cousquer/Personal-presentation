@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse; fuse: false" raycaster="objects: .raycastable"
+  <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse; fuse: true" raycaster="objects: .raycastable"
            stats webxr="referenceSpaceType: local-floor">
     <a-assets>
 
@@ -133,7 +133,6 @@
     <!--    Camera for text pop up    -->
 
     <a-camera id="camera" wasd-controls-enabled="true" look-controls="touchEnabled: true;">
-      <a-cursor fuse="true" fuseTimeout="1500"></a-cursor>
       <a-entity id="ui" position="0 0 -1">
         <a-entity id="fadeBackground" geometry="primitive: plane; width: 3.4; height: 1.7" position="0 0 -0.01"
                   rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
