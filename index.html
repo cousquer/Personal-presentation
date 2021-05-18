@@ -9,6 +9,7 @@
   <script src="scripts/aframe-v1.2.0.min.js"></script>
   <script src="scripts/highlight.js"></script> <!--  for the UI -->
   <script src="scripts/interractions.js"></script>
+  <script src="scripts/mobile.js"></script>
 
   <!-- 
     some texture on https://www.swtexture.com/ 
@@ -136,8 +137,8 @@
 
     <a-mixin id="tp_circles_main" geometry="primitive: circle;" radius="0.5" material="src: #texture_interraction_tp">
     </a-mixin>
-    <a-mixin id="tp_circles_secondary" geometry="primitive: circle;" radius="0.3"
-             material="src: #texture_interraction_tp">
+    <a-mixin id="tp_circles_secondary" mobile geometry="primitive: circle;" radius="0.3"
+             material="src: #texture_interraction_tp" visible="false">
     </a-mixin>
 
 
@@ -251,10 +252,11 @@
           </a-entity>
           <a-entity mixin="hall_light" position="0 6 8" rotation="90 0 0">
           </a-entity>
-          <a-entity mixin="tp_circles_mains" position="0 0.01 7.5" rotation="-90 0 0">
+          <a-entity mixin="tp_circles_main" position="0 0.01 7.5" rotation="-90 0 0">
           </a-entity>
         </a-entity>
       </a-entity>
+
 
       <!-- North part - M1 -->
 
