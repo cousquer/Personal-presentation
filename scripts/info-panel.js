@@ -27,7 +27,7 @@ AFRAME.registerComponent('info-panel', {
       M1_RayTracing: {
         title: 'Ray Tracing',
         imgEl: document.querySelector('#projectResume'),
-        description: 'Ce projet a ete realise en binome en C++. Nous avons cree un moteur de rendu 3D non-temps reel base sur la technique du Ray Tracing'
+        description: 'Ce projet a ete realise en binome en C++. Nous avons cree un moteur de rendu 3D non-temps reel base sur la technique du Ray Tracing. Les scenes sont composees de formes geometriques de bases (spheres, cubes, pyramides...)'
       },
       M1_Fusee: {
         title: 'Construction et lancement de fusee ',
