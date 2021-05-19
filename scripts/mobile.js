@@ -1,11 +1,15 @@
 /* global AFRAME */
 AFRAME.registerComponent('mobile', {
   init: function () {
+    var objs = document.querySelectorAll('.phone')
     if (AFRAME.utils.device.isMobile()) {
-      document.querySelectorAll('.phone').setAttribute('visible', true)
+      for (var i = 0; i < objs.length; ++i) {
+        objs[i].setAttribute('visible', true)
+      }
     } else {
-      console.log()
-      document.querySelectorAll('.phone').setAttribute('visible', true)
+      for (var i = 0; i < objs.length; ++i) {
+        objs[i].setAttribute('visible', true)
+      }
     // document.querySelector('.phone').remove()
     }
 
