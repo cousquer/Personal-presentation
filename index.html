@@ -148,14 +148,19 @@
     <a-camera id="camera" wasd-controls-enabled="true" look-controls="touchEnabled: true;">
       <a-sound src="assets/audio/musique_ambiance_fond.ogg" autoplay="true" positional="false" refDistance="0"
                loop="true"></a-sound>
+
       <a-entity id="ui" position="0 0 -1">
 
-        <a-cursor raycaster="objects: .clickable">
-          <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusInner: 0.03; radiusOuter: 0.05;"
-                    material="color: white; shader: flat" cursor="maxDistance: 10; fuse: true" class="phone">
-            <a-animation startEvents="click" property="scale" from="0.5 0.5 0.5" to="1 1 1" dur="150"></a-animation>
-            <a-animation startEvents="fusing" property="scale" from="1 1 1" to="0.5 0.5 0.5" dur="1500"></a-animation>
-          </a-entity>
+        <a-cursor position=" 0 0 -0.5" geometry="primitive: ring; radiusInner: 0.03; radiusOuter: 0.05;"
+                  material="color: white; shader: flat" cursor="maxDistance: 10; fuse: true" class="phone"
+                  raycaster="objects: .clickable" animation="startEvents:fusing; 
+                  property:scale; 
+                  from:1 1 1; 
+                  to:0.5 0.5 0.5; 
+                  dur:1500" animation__out="startEvents: mouseleave;
+                  property: scale;
+                  to: 1 1 1; 
+                  dur:150">
         </a-cursor>
 
         <a-entity id="fadeBackground" geometry="primitive: plane; width: 3.4; height: 1.7" position="0 0 -0.01"
