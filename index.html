@@ -123,7 +123,7 @@
              material="src: #texture_interraction_info; shader: flat; transparent: true"
              animation__scale="property: scale; to: 1.2 1.2 1.2; dur: 200; startEvents: mouseenter"
              animation__scale_reverse="property: scale; to: 0.9 0.9 0.9; dur: 200; startEvents: mouseleave"
-             sound="src: assets\audio\bubble.wav; on: click; volume:2">
+             sound="src: assets\audio\bubble.wav; on: click; volume:2" class="clickable">
     </a-mixin>
 
 
@@ -151,8 +151,8 @@
 
       <a-entity id="ui" position="0 0 -1">
 
-        <a-cursor position=" 0 0 -0.5" geometry="primitive: ring; radiusInner: 0.03; radiusOuter: 0.05;"
-                  material="color: white; shader: flat" cursor="maxDistance: 10; fuse: true" class="phone"
+        <a-cursor position=" 0 0 -0.4" geometry="primitive: ring; radiusInner: 0.03; radiusOuter: 0.05;"
+                  material="color: white; shader: flat" cursor="maxDistance: 10; fuse: true"
                   raycaster="objects: .clickable" animation="startEvents:fusing; 
                   property:scale; 
                   from:1 1 1; 
@@ -160,7 +160,7 @@
                   dur:1500" animation__out="startEvents: mouseleave;
                   property: scale;
                   to: 1 1 1; 
-                  dur:150">
+                  dur:150" fuse-timeout="250" class="phone">
         </a-cursor>
 
         <a-entity id="fadeBackground" geometry="primitive: plane; width: 3.4; height: 1.7" position="0 0 -0.01"
