@@ -142,10 +142,6 @@
              material="src: #texture_interraction_tp" visible="false" class="phone">
     </a-mixin>
 
-    <a-mixin id="tp_animation" begin="click" attribute="rotation" to="0 360 0" easing="linear" dur="2000"
-             fill="backwards">
-    </a-mixin>
-
 
     <!--    Camera for text pop up    -->
 
@@ -154,11 +150,11 @@
                loop="true"></a-sound>
       <a-entity id="ui" position="0 0 -1">
 
-        <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusInner: 0.052; radiusOuter: 0.1;"
+        <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusInner: 0.03; radiusOuter: 0.05;"
                   material="color: white; shader: flat" cursor="maxDistance: 10; fuse: true" class="phone">
-          <a-animation begin="click" easing="ease-in" attribute="scale" fill="forwards" from="0.2 0.2 0.2" to="1 1 1"
+          <a-animation begin="click" easing="ease-in" attribute="scale" fill="forwards" from="0.5 0.5 0.5" to="1 1 1"
                        dur="150"></a-animation>
-          <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="backwards" from="1 1 1" to="0.2 0.2 0.2"
+          <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="backwards" from="1 1 1" to="0.5 0.5 0.5"
                        dur="1500"></a-animation>
         </a-entity>
 
@@ -221,7 +217,6 @@
           <a-entity mixin="hall_light" position="0 6 -8" rotation="90 0 0">
           </a-entity>
           <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -7.5" rotation="-90 0 0">
-            <a-animation mixin="tp_animation"></a-animation>
           </a-entity>
         </a-entity>
         <a-entity id="East">
@@ -238,7 +233,6 @@
           <a-entity mixin="hall_light" position="8 6 0" rotation="90 0 0">
           </a-entity>
           <a-entity id="teleport" mixin="tp_circles_main" position="7.5 0.01 0" rotation="-90 0 0">
-            <a-animation mixin="tp_animation"></a-animation>
           </a-entity>
         </a-entity>
         <a-entity id="West">
@@ -269,7 +263,6 @@
           <a-entity mixin="hall_light" position="0 6 8" rotation="90 0 0">
           </a-entity>
           <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 7.5" rotation="-90 0 0">
-            <a-animation mixin="tp_animation"></a-animation>
           </a-entity>
         </a-entity>
       </a-entity>
