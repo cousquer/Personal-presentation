@@ -9,7 +9,7 @@ AFRAME.registerComponent('mobile', {
     }
 
     var teleport_pads = document.querySelectorAll('#teleport')
-    this.teleport = this.teleport.bind(this)
+    //this.teleport = this.teleport.bind(this)
     for (var i = 0; i < teleport_pads.length; ++i) {
       teleport_pads[i].addEventListener('click', this.teleport)
     }
