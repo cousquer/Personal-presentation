@@ -6,7 +6,7 @@ AFRAME.registerComponent('mobile', {
       document.querySelector('.phone').setAttribute('visible', true)
     } else {
       console.log('PC')
-      document.querySelector('.phone').setAttribute('visible', false)
+      document.querySelector('.phone').remove()
     }
   }
 })
