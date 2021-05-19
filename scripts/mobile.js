@@ -3,10 +3,10 @@ AFRAME.registerComponent('mobile', {
   init: function () {
     if (AFRAME.utils.device.isMobile()) {
       console.log('MOBILE')
-      document.querySelector('.tp_circle').setAttribute('visible', true)
+      document.querySelector('.phone').setAttribute('visible', true)
     } else {
       console.log('PC')
-      document.querySelector('.tp_circle').setAttribute('visible', false)
+      document.querySelector('.phone').setAttribute('visible', true) // a changer
     }
   }
 })
