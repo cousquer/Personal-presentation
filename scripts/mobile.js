@@ -6,6 +6,7 @@ AFRAME.registerComponent('mobile', {
       document.querySelector('.phone').setAttribute('visible', true)
     } else {
       console.log('PC')
+      document.querySelector('.phone').setAttribute('visible', true)
     // document.querySelector('.phone').remove()
     }
 
@@ -14,11 +15,10 @@ AFRAME.registerComponent('mobile', {
     for (var i = 0; i < teleport_pads.length; ++i) {
       teleport_pads[i].addEventListener('click', this.teleport)
     }
-
   },
 
   teleport: function (evt) {
-    //document.querySelector('#camera').setAttribute('position', )
+    // document.querySelector('#camera').setAttribute('position', )
     console.log(this)
   }
 })
