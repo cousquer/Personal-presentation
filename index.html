@@ -136,10 +136,10 @@
     <!--    Phones only    -->
 
     <a-mixin id="tp_circles_main" mobile geometry="primitive: circle;" radius="0.5"
-             material="src: #texture_interraction_tp" visible="false" class="phone clickable">
+             material="src: #texture_interraction_tp" visible="false">
     </a-mixin>
     <a-mixin id="tp_circles_secondary" mobile geometry="primitive: circle;" radius="0.3"
-             material="src: #texture_interraction_tp" visible="false" class="phone clickable">
+             material="src: #texture_interraction_tp" visible="false">
     </a-mixin>
 
 
@@ -151,7 +151,7 @@
 
       <a-entity id="ui" position="0 0 -1">
 
-        <a-cursor fuse="true" fuse-timeout="250" position=" 0 0 -0.2"
+        <a-cursor fuse="true" fuse-timeout="1500" position=" 0 0 -0.2"
                   geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03;"
                   material="color: white; shader: flat"
                   raycaster="objects: .clickable; showLine: true; far: 10; lineColor: red;" animation="startEvents:mouseenter; 
@@ -222,7 +222,8 @@
           </a-entity>
           <a-entity mixin="hall_light" position="0 6 -8" rotation="90 0 0">
           </a-entity>
-          <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -7.5" rotation="-90 0 0">
+          <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 -7.5" rotation="-90 0 0"
+                    class="phone clickable">
           </a-entity>
         </a-entity>
         <a-entity id="East">
@@ -238,7 +239,8 @@
           </a-entity>
           <a-entity mixin="hall_light" position="8 6 0" rotation="90 0 0">
           </a-entity>
-          <a-entity id="teleport" mixin="tp_circles_main" position="7.5 0.01 0" rotation="-90 0 0">
+          <a-entity id="teleport" mixin="tp_circles_main" position="7.5 0.01 0" rotation="-90 0 0"
+                    class="phone clickable">
           </a-entity>
         </a-entity>
         <a-entity id="West">
@@ -268,7 +270,8 @@
           </a-entity>
           <a-entity mixin="hall_light" position="0 6 8" rotation="90 0 0">
           </a-entity>
-          <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 7.5" rotation="-90 0 0">
+          <a-entity id="teleport" mixin="tp_circles_main" position="0 0.01 7.5" rotation="-90 0 0"
+                    class="phone clickable">
           </a-entity>
         </a-entity>
       </a-entity>
@@ -307,7 +310,7 @@
 
             <a-entity id="interraction">
               <a-entity id="M1_Pa8" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -10"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 -90 0" position="4 2 -12">
@@ -353,7 +356,7 @@
 
             <a-entity id="interraction">
               <a-entity id="M1_Parking" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -22.5"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 -90 0" position="4 2 -24.5">
@@ -399,7 +402,7 @@
 
             <a-entity id="interraction">
               <a-entity id="M1_Robot" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -35"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 -90 0" position="4 2 -37">
@@ -445,7 +448,7 @@
 
             <a-entity id="interraction">
               <a-entity id="M1_RayTracing" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 -47.5"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 -90 0" position="4 2 -49.5">
@@ -493,7 +496,7 @@
 
             <a-entity id="interraction">
               <a-entity id="M1_Fusee" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -10"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -12">
@@ -539,7 +542,7 @@
 
             <a-entity id="interraction">
               <a-entity id="M1_Chat" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -22.5"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -24.5">
@@ -585,7 +588,7 @@
 
             <a-entity id="interraction">
               <a-entity id="M1_Covid" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -35"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -37">
@@ -631,7 +634,7 @@
 
             <a-entity id="interraction">
               <a-entity id="M1_MD_Learning" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 -47.5"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 -49.5">
@@ -699,7 +702,7 @@
             <a-entity id="interraction">
               <!--
               <a-entity id="L2_BwarioKart" mixin="interraction_info_bulle" rotation="-20 180 0" position="10 1.5 4"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>-->
               <a-entity id="L2_BwarioKart" mixin="interraction_info_bulle" rotation="0 -90 0" position="3 1.5 0"
                         class="raycastable menu-button clickable">
@@ -748,7 +751,7 @@
 
             <a-entity id="interraction">
               <a-entity id="L2_ObjectiveEquilibrium" mixin="interraction_info_bulle" rotation="-20 180 0"
-                        position="22.5 1.5 4" class="raycastable menu-button">
+                        position="22.5 1.5 4" class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 180 0" position="24.5 2 4">
@@ -800,7 +803,7 @@
 
             <a-entity id="interraction">
               <a-entity id="L3_NewsAdventure" mixin="interraction_info_bulle" rotation="-20 0 0" position="10 1.5 -4"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 0 0" position="12 2 -4">
@@ -846,7 +849,7 @@
 
             <a-entity id="interraction">
               <a-entity id="L3_Psy" mixin="interraction_info_bulle" rotation="-20 0 0" position="22.5 1.5 -4"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 0 0" position="24.5 2 -4">
@@ -892,7 +895,7 @@
 
             <a-entity id="interraction">
               <a-entity id="L3_Graphs" mixin="interraction_info_bulle" rotation="-20 0 0" position="35 1.5 -4"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 0 0" position="37 2 -4">
@@ -938,7 +941,7 @@
 
             <a-entity id="interraction">
               <a-entity id="L3_Garage" mixin="interraction_info_bulle" rotation="-20 0 0" position="47.5 1.5 -4"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 0 0" position="49.5 2 -4">
@@ -1032,7 +1035,7 @@
 
             <a-entity id="interraction">
               <a-entity id="Other_This" mixin="interraction_info_bulle" rotation="-20 90 0" position="-4 1.5 10"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 90 0" position="-4 2 12">
@@ -1080,7 +1083,7 @@
 
             <a-entity id="interraction">
               <a-entity id="Other_Dimension" mixin="interraction_info_bulle" rotation="-20 -90 0" position="4 1.5 10"
-                        class="raycastable menu-button">
+                        class="raycastable menu-button clickable">
               </a-entity>
 
               <a-plane src="#texture_interraction_wip" height="2" width="2" rotation="-10 -90 0" position="4 2 12">
