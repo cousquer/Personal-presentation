@@ -151,9 +151,8 @@
 
       <a-entity id="ui" position="0 0 -1">
 
-        <a-cursor position=" 0 0 -0.4" geometry="primitive: ring; radiusInner: 0.03; radiusOuter: 0.05;"
-                  material="color: white; shader: flat" cursor="maxDistance: 10; fuse: true"
-                  raycaster="objects: .clickable" animation="startEvents:fusing; 
+        <a-cursor fuse="true" position=" 0 0 -0.4" geometry="primitive: ring; radiusInner: 0.03; radiusOuter: 0.05;"
+                  material="color: white; shader: flat" raycaster="objects: .clickable" animation="startEvents:fusing; 
                   property:scale; 
                   from:1 1 1; 
                   to:0.5 0.5 0.5; 
