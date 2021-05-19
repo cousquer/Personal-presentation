@@ -151,15 +151,17 @@
 
       <a-entity id="ui" position="0 0 -1">
 
-        <a-cursor fuse="true" position=" 0 0 -0.4" geometry="primitive: ring; radiusInner: 0.03; radiusOuter: 0.05;"
-                  material="color: white; shader: flat" raycaster="objects: .clickable" animation="startEvents:fusing; 
+        <a-cursor fuse="true" fuse-timeout="250" position=" 0 0 -0.2"
+                  geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03;"
+                  material="color: white; shader: flat"
+                  raycaster="objects: .clickable; showLine: true; far: 10; lineColor: red;" animation="startEvents:fusing; 
                   property:scale; 
                   from:1 1 1; 
                   to:0.5 0.5 0.5; 
                   dur:1500" animation__out="startEvents: mouseleave;
                   property: scale;
                   to: 1 1 1; 
-                  dur:150" fuse-timeout="250" class="phone">
+                  dur:150" class="phone">
         </a-cursor>
 
         <a-entity id="fadeBackground" geometry="primitive: plane; width: 3.4; height: 1.7" position="0 0 -0.01"
