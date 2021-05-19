@@ -121,8 +121,8 @@
 
     <a-mixin id="interraction_info_bulle" geometry="primitive: circle; radius: 0.3"
              material="src: #texture_interraction_info; shader: flat; transparent: true"
-             animation__scale="property: scale; to: 1.2 1.2 1.2; dur: 200; startEvents: mouseenter"
-             animation__scale_reverse="property: scale; to: 0.9 0.9 0.9; dur: 200; startEvents: mouseleave"
+             animation__scale="property: scale; to: 1.3 1.3 1.3; dur: 200; startEvents: mouseenter"
+             animation__scale_reverse="property: scale; to: 1 1 1; dur: 200; startEvents: mouseleave"
              sound="src: assets\audio\bubble.wav; on: click; volume:2">
     </a-mixin>
 
@@ -152,9 +152,8 @@
       <a-entity id="ui" position="0 0 -1">
 
         <a-cursor fuse="true" fuse-timeout="1500" position=" 0 0 -0.2"
-                  geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03;"
-                  material="color: white; shader: flat"
-                  raycaster="objects: .clickable; showLine: true; far: 10; lineColor: red;" animation="startEvents:mouseenter; 
+                  geometry="primitive: ring; radiusInner: 0.025; radiusOuter: 0.035;"
+                  material="color: white; shader: flat" raycaster="objects: .clickable" animation="startEvents:mouseenter; 
                   property:scale; 
                   from:1 1 1; 
                   to:0.5 0.5 0.5; 
