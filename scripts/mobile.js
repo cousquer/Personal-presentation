@@ -19,7 +19,10 @@ AFRAME.registerComponent('mobile', {
 
   teleport: function (evt) {
     // document.querySelector('#camera').setAttribute('position', )
-    console.log('toute position = ' + this.position)
-    console.log("position x = " + this.position.x)
+    console.log('this.object3D.position.x = ' + this.object3D.position.x)
+    console.log('this.getAttribute(position) = ' + this.getAttribute('position'))
+    console.log('this.getAttribute(position).x = ' + this.getAttribute('position').x)
+    console.log('this.getAttribute(position, x) = ' + this.getAttribute('position', 'x'))
+    console.log('-------------')
   }
 })
