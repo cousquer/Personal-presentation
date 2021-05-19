@@ -136,10 +136,10 @@
     <!--    Phones only    -->
 
     <a-mixin id="tp_circles_main" mobile geometry="primitive: circle;" radius="0.5"
-             material="src: #texture_interraction_tp" visible="false" class="phone">
+             material="src: #texture_interraction_tp" visible="false" class="phone clickable">
     </a-mixin>
     <a-mixin id="tp_circles_secondary" mobile geometry="primitive: circle;" radius="0.3"
-             material="src: #texture_interraction_tp" visible="false" class="phone">
+             material="src: #texture_interraction_tp" visible="false" class="phone clickable">
     </a-mixin>
 
 
@@ -150,13 +150,13 @@
                loop="true"></a-sound>
       <a-entity id="ui" position="0 0 -1">
 
-        <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusInner: 0.03; radiusOuter: 0.05;"
-                  material="color: white; shader: flat" cursor="maxDistance: 10; fuse: true" class="phone">
-          <a-animation begin="click" easing="ease-in" attribute="scale" fill="forwards" from="0.5 0.5 0.5" to="1 1 1"
-                       dur="150"></a-animation>
-          <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="backwards" from="1 1 1" to="0.5 0.5 0.5"
-                       dur="1500"></a-animation>
-        </a-entity>
+        <a-cursor raycaster="objects: .clickable">
+          <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusInner: 0.03; radiusOuter: 0.05;"
+                    material="color: white; shader: flat" cursor="maxDistance: 10; fuse: true" class="phone">
+            <a-animation startEvents="click" property="scale" from="0.5 0.5 0.5" to="1 1 1" dur="150"></a-animation>
+            <a-animation startEvents="fusing" property="scale" from="1 1 1" to="0.5 0.5 0.5" dur="1500"></a-animation>
+          </a-entity>
+        </a-cursor>
 
         <a-entity id="fadeBackground" geometry="primitive: plane; width: 3.4; height: 1.7" position="0 0 -0.01"
                   rotation="0 180 0" material="color: black; side: back; shader: flat; transparent: true; opacity: 0.6"
