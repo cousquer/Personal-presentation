@@ -1,0 +1,11 @@
+Model Information:
+* title:	P3 - Petersen Family
+* source:	https://sketchfab.com/3d-models/p3-petersen-family-09404753fa434ced9903f74d7b50169e
+* author:	mathgrrl (https://sketchfab.com/mathgrrl)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "P3 - Petersen Family" (https://sketchfab.com/3d-models/p3-petersen-family-09404753fa434ced9903f74d7b50169e) by mathgrrl (https://sketchfab.com/mathgrrl) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
