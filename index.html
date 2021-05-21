@@ -5,7 +5,8 @@
   <title>Lilian's projects</title>
   <meta name="description" content="Lilian's projects • A-Frame">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+  <link rel="stylesheet" href="style.css" />
+  
   <script src="scripts/aframe-v1.2.0.min.js"></script>
   <script src="scripts/highlight.js"></script> <!--  for the UI -->
   <script src="scripts/interractions.js"></script>
@@ -28,6 +29,19 @@
 </head>
 
 <body>
+     <div id="container" class="container">
+      <div class="info">
+        <div class="company"><a href="#" target="_blank">lien vers ton cv</a></div>
+        <div class="title">Favre-Garcia Hall</div>
+        
+        <a class="button" id="start_experience" href="#">Entrez</a>
+        <div class="instructions">
+          <div><strong>Desktop</strong>: Clavier (flèches directionnelles) et souris.</div>
+          <div><strong>Mobile</strong>: visez les cibles au sol</div>
+        </div>
+      </div>
+    </div>
+    
   <a-scene renderer="colorManagement: true;" cursor="rayOrigin: mouse;" raycaster="objects: .raycastable" stats
            webxr="referenceSpaceType: local-floor">
     <a-assets>
@@ -92,9 +106,9 @@
     <!--   Global assets   -->
 
     <!--<a-sky src="#texture_sky"></a-sky>-->
-    <a-entity text="align: center; color: red; value: Bienvenue dans ce musee" position="0 1.5 -2" rotation="0 0 0"
+    <!--<a-entity text="align: center; color: red; value: Bienvenue dans ce musee" position="0 1.5 -2" rotation="0 0 0"
               scale="5 5 5">
-    </a-entity>
+    </a-entity>-->
     <a-entity text="align: center; color: blue; value: North - M1 projects" position="0 1.5 -7.5" rotation="0 0 0"
               scale="5 5 5">
     </a-entity>
@@ -1185,6 +1199,7 @@
       </a-entity>
     </a-entity>
   </a-scene>
+    <script src="main.js"></script>
 </body>
 
 </html>
